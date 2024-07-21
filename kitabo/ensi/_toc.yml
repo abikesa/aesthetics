@@ -1,0 +1,54 @@
+# Dionysus
+format: jb-book
+root: index
+chapters:
+  # Sing O Muse!
+  - file: act1/part1
+    sections:
+      - title: Mortality
+        file: act1/chapter1
+      - title: ESRD
+        file: act1/chapter2
+      - title: Frailty
+        file: act1/chapter3
+        
+  # Sing O Muse!
+  - file: act2/part2
+    sections:
+      - title: Hospitalization
+        file: act2/chapter1
+      - title: Length of Stay
+        file: act2/chapter2
+      - title: Outcomes
+        file: act2/chapter3
+
+  # Apollo
+  - file: act3/part3
+    sections:
+      - title: WebApp
+        file: act3/act1
+        sections:
+          - title: Browser
+            file: act3/part1/part1_1
+          - title: User
+            file: act3/part1/part1_2
+          - title: Annotation
+            file: act3/part1/part1_3
+      - title: Deployment
+        file: act3/act2
+        sections:
+          - title: GitHub
+            file: act3/part2/part2_1
+          - title: Collaborative
+            file: act3/part2/part2_2
+          - title: Open-Source
+            file: act3/part2/part2_3
+      - title: Iteration
+        file: act3/act3
+        sections:
+          - title: Latest Research
+            file: act3/part3/part3_1
+          - title: Bayesian Updates
+            file: act3/part3/part3_2
+          - title: Missingness and A Priori
+            file: act3/part3/part3_3
