@@ -62,6 +62,8 @@ sphinx:
     myst_heading_anchors    : 5
     bibtex_bibfiles         :
       - _bibliography/references.bib
-    bibtex_reference_order: 'citation'
-    bibtex_default_style: 'plain'
-    bibtex_reference_style: 'author_year' # bibtex_reference_style  : 'numeric' #label
+    bibtex_reference_order: 'citation' 
+    bibtex_default_style: 'unsrt' # 'plain' 
+    bibtex_reference_style: 'label' # 'author_year'  
+    bibtex_cite_style: 'numeric'
+    bibtex_footbibliography_header: ''
