@@ -1,4 +1,4 @@
-(fw-aim2)=
+(act2-los)=
 # Deployment
 
 The simultaneous emergence of films like "Lost in Translation" and "Kill Bill," both featuring significant Japanese settings or influences, can be seen as a symptom rather than a coincidence, reflecting Japan's cultural peak in the 90s and early 2000s. Here are a few reasons why this happened:
