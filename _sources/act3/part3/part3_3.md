@@ -1,7 +1,6 @@
 (webApp-opensource)=
 # Bibliography
 
-*This file consist of a complete bibliography for this book sorted alphabetically*
+*This file consists of a complete bibliography for this book sorted alphabetically*
 
 ```{bibliography}
-```
