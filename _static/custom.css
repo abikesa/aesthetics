@@ -1,0 +1,23 @@
+/* Move search bar to the top right corner */
+.search-bar {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1000;
+}
+
+/* Adjust navbar elements to ensure proper alignment */
+.navbar-header .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-header .navbar-right > * {
+  margin-left: 1rem;
+}
+
+/* Ensure other elements in the navbar are not affected */
+.navbar-nav {
+  margin-right: 1rem;
+}
