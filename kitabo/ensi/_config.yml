@@ -51,6 +51,7 @@ repository:
 sphinx:
   extra_extensions          :
       - 'sphinx_panels'
+      - 'sphinxcontrib.bibtex'
   config                    :  # key-value pairs to directly over-ride the Sphinx configuration
     language                : en
     html_show_copyright     : false
@@ -59,6 +60,6 @@ sphinx:
         - 'app.add_directive'
         - 'app.add_role'
     myst_heading_anchors    : 5
-
-bibtex_bibfiles:
-    - _bibliography/references.bib
+    bibtex_bibfiles         :
+      - _bibliography/references.bib
+    bibtex_reference_style  : label

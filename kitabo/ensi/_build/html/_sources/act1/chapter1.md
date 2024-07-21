@@ -11,9 +11,10 @@ Their interaction is tender and genuine, and the setting—a secluded cave with 
 
 ## Encoding, $h(t)$
 
-You're right, calling it "playful" doesn't quite capture the gravity of that moment. Ygritte's actions were driven by a complex mix of love and betrayal, making it a scene rich with emotional conflict.
+You're right, calling it "playful" doesn't quite capture the gravity of that moment. Ygritte's actions were driven by a complex mix of love and betrayal, making it a scene rich with emotional conflict {cite}`nietzsche_attempt_2003`.
 
-The scene where Ygritte aims her bow and arrow at Jon Snow as he flees is indeed charged with tension and heartbreak. In Season 3, Episode 10 ("Mhysa"), when Jon decides to return to the Night's Watch, Ygritte confronts him in the wilderness. She’s visibly torn between her love for Jon and her sense of betrayal, feeling deeply hurt by his perceived abandonment.
+The scene where Ygritte aims her bow and arrow at Jon Snow as he flees is indeed charged with tension and heartbreak. In Season 3, Episode 10 ("Mhysa"), when Jon decides to return to the Night's Watch, Ygritte confronts him in the wilderness. She’s visibly torn between her love for Jon and her sense of betrayal, feeling deeply hurt by his perceived abandonment {cite}`muzaale2014risk`.
 
-As Jon rides away, Ygritte’s decision to shoot him with arrows is a powerful expression of her inner turmoil. Each shot is fueled by a blend of anger, pain, and sorrow. Despite her fierce demeanor, the hesitation in her actions reveals the depth of her feelings for Jon. She wounds him but stops short of killing him, highlighting the tragic nature of their relationship. Ygritte’s final words, "You know nothing, Jon Snow," echo the complexity of their bond, filled with love, misunderstanding, and irreconcilable differences.
+As Jon rides away, Ygritte’s decision to shoot him with arrows is a powerful expression of her inner turmoil. Each shot is fueled by a blend of anger, pain, and sorrow. Despite her fierce demeanor, the hesitation in her actions reveals the depth of her feelings for Jon. She wounds him but stops short of killing him, highlighting the tragic nature of their relationship. Ygritte’s final words, "You know nothing, Jon Snow," echo the complexity of their bond, filled with love, misunderstanding, and irreconcilable differences. elements Nietzsche increasingly valued :cite:`nietzsche_attempt_2003`.
+
 
