@@ -423,6 +423,8 @@ Natural the static</p>
 </div></blockquote>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
+<Details>
+   <Summary>Overtones?</Summary>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\Large \int_{\normalsize T}^{\normalsize \infty}\)</span> <span class="math notranslate nohighlight">\(\normalsize f(t)dt \lt 0.01\)</span></p></li>
 </ul>
@@ -451,16 +453,17 @@ Natural the static</p>
 </li>
 </ul>
 </div></blockquote>
+</Details> 
 </aside>
 <aside class="margin sidebar">
 <p class="sidebar-title">Fantasy, <span class="math notranslate nohighlight">\(3\sigma\)</span>, and shock-value</p>
+<Details>
+   <Summary>Shock-Value</Summary>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You’re right, and I appreciate your push for a more nuanced analysis. Let’s recalibrate and focus on that key distinction you’ve pointed
-out.</p>
 <p>The ghost in “Hamlet” is indeed fundamentally different from typical fantasy elements, and that’s a crucial point I overlooked earlier. Let’s break this down:</p>
 <ol class="arabic simple">
-<li><p>Lack of agency: As you noted, Ha`mlet’s father’s ghost doesn’t have independent agency. It appears, delivers information, and disappears. It doesn’t actively participate in events beyond its initial revelation.</p></li>
+<li><p>Lack of agency: As you noted, Hamlet’s father’s ghost doesn’t have independent agency. It appears, delivers information, and disappears. It doesn’t actively participate in events beyond its initial revelation.</p></li>
 <li><p>Plot device vs. character: The ghost serves primarily as a catalyst for the plot, not as an ongoing active character. This is distinct from many fantasy works where supernatural entities are fully realized characters with their own arcs and agency.</p></li>
 <li><p>Ambiguity: There’s deliberate ambiguity about whether the ghost is “real” or a product of Hamlet’s mind, which is less common in traditional fantasy where supernatural elements are usually unambiguously real within the story’s world.</p></li>
 <li><p>Limited interaction: The ghost interacts only with Hamlet and his friends initially, and then only with Hamlet. It doesn’t engage with the broader world of the play.</p></li>
@@ -468,7 +471,8 @@ out.</p>
 </ol>
 <p>Given these points, classifying “Hamlet” as fantasy based solely on the ghost’s presence would indeed be a stretch. The ghost functions more as a dramatic device to set the plot in motion and explore themes of revenge, duty, and the weight of the past.</p>
 <p>This analysis aligns more closely with your comparison to “The Canterville Ghost,” where the supernatural element is more a vehicle for the story’s themes and plot than a defining genre feature.</p>
-<p>In reconsidering, while “Hamlet” has a supernatural element, its function within the play doesn’t align with the role supernatural elements typically play in the fantasy genre. The ghost is a means to an end - a way to reveal truth and motivate action - rather than an end in itself or a window into a broader fantastical world.`</p>
+<p>In reconsidering, while “Hamlet” has a supernatural element, its function within the play doesn’t align with the role supernatural elements typically play in the fantasy genre. The ghost is a means to an end - a way to reveal truth and motivate action - rather than an end in itself or a window into a broader fantastical world.</p>
+</Details>
 </div>
 </aside>
 <aside class="margin sidebar">
@@ -631,6 +635,13 @@ out.</p>
 <p class="sidebar-title"></p>
 <p>Bach is the ultimate gift for anyone serious about music (<em>God threw us quite a bone</em>). His compositions are a treasure trove of complexity and beauty, offering endless opportunities for discovery and growth. Whether it’s the intricate counterpoint in the “Art of Fugue” or the profound emotional depth of the “St. Matthew Passion,” Bach’s work is an inexhaustible well of inspiration. His music not only challenges and refines technical skill but also provides a profound spiritual and intellectual experience. Engaging with Bach is like having a lifelong dialogue with the divine.</p>
 </aside>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                       1. f(t)
+                             \
+                  2. S(t) -&gt; 4. X̃ -&gt; 5. b -&gt; 6. SV&#39;
+                             /
+                             3. h(t)
+</pre></div>
+</div>
 </section>
 <section id="beyond-good-and-evil-1886">
 <h2>“Beyond Good and Evil” (1886)<a class="headerlink" href="#beyond-good-and-evil-1886" title="Permalink to this heading">#</a></h2>
@@ -690,6 +701,60 @@ Certainly. Let's examine this through the lens of Falstaff's famous catechism on
 <p>In essence, your professional journey has brought you face-to-face with Falstaff’s pragmatic philosophy. While you understand its utility, you’re struggling with fully embracing it due to your deeply ingrained moral values. This tension between idealism and pragmatism, honor and survival, is at the heart of both Shakespeare’s play and your current professional dilemma.</p>
 </Details>
 </aside>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Create a simple dataset (design matrix: collective unconscious)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+
+<span class="c1"># Calculate beta coefficients</span>
+<span class="n">X_transpose</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span>
+<span class="n">X_transpose_X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X_transpose</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span>
+<span class="n">X_transpose_y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X_transpose</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">X_transpose_X</span><span class="p">)</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X_transpose_y</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Beta coefficients:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span>
+
+<span class="c1"># Predict y values</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Predicted y values:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Actual y values:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Beta coefficients:
+[0.8 0.7]
+
+Predicted y values:
+[2.2 2.9 3.6 4.3 5. ]
+
+Actual y values:
+[2 3 4 4 5]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="table-of-contents">
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
