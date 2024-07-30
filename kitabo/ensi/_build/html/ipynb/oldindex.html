@@ -1,0 +1,1254 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Tech &#8212; Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ipynb/oldindex';</script>
+    <script src="../_static/script.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://github.com/jhufena/jhufena.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-light" alt="Template - Home"/>
+    <script>document.write(`<img src="https://github.com/jhufena/jhufena.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-dark" alt="Template - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act1/part1.html">Aim 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Mortality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">ESRD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Frailty</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act2/part2.html">Aim 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter1.html">Hospitalization</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter2.html">Length of Stay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter3.html">Outcomes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act3/part3.html">Aim 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act1.html">WebApp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_1.html">Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_2.html">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_3.html">Annotation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act2.html">Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_1.html">GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_2.html">4.2</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_3.html">4.3</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act3.html">Iteration</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_1.html">Latest Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_2.html">Bayesian Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_3.html">Missingness and A Priori</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/ipynb/oldindex.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ipynb/oldindex.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Tech</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dionysus-1-2-3">Dionysus 1, 2, 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sing-o-muse-4">Sing O Muse! 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apollo-5-6">Apollo 5, 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beyond-good-and-evil-1886">“Beyond Good and Evil” (1886)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="tech">
+<span id="oldpreface"></span><h1>Tech<a class="headerlink" href="#tech" title="Permalink to this heading">#</a></h1>
+<p><img alt="" src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20240727_EUD000.jpg" /></p>
+<Details>
+   <Summary>Newts</Summary>
+- Matrix         
+- Newts         
+- AGI            
+</Details>
+<Details>
+   <Summary><i>Parfaite!</i></Summary>
+<ul class="simple">
+<li><p>ii-V7-i</p></li>
+<li><p>ii-V7-I</p></li>
+</ul>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/5egURt6AKPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</Details>
+<Details>
+   <Summary>Identity</Summary>
+When considering "the last man standing" in a literary or metaphorical context through the lens of probability and value systems, here’s how we might approach it:
+<ol class="arabic simple">
+<li><p><strong>Probability Density Function (PDF):</strong></p>
+<ul class="simple">
+<li><p><strong>Literary Context:</strong> In a narrative sense, the last man standing is an outlier rather than part of a continuous probability distribution. If we think of the plot as a probability density function, the last man standing represents a rare event with a low probability of occurrence—an extreme outcome within that distribution.</p></li>
+</ul>
+</li>
+<li><p><strong>Categorical Imperative:</strong></p>
+<ul class="simple">
+<li><p><strong>Value System:</strong> From a philosophical standpoint, the last man standing can represent a categorical imperative, or a fundamental principle of action that transcends situational ethics. This figure often embodies core values such as honor, resilience, or duty, which are held as universal truths or guiding principles in the story.</p></li>
+</ul>
+</li>
+<li><p><strong>Alternative Value System:</strong></p>
+<ul class="simple">
+<li><p><strong>Different Framework:</strong> The last man standing might also belong to a different value system or framework, distinct from the primary narrative’s norms. For instance, their survival could symbolize a different set of values or priorities, reflecting an alternative moral or existential framework within the story.</p></li>
+</ul>
+</li>
+<li><p><strong>Intersection of Systems:</strong></p>
+<ul class="simple">
+<li><p><strong>Synthesis:</strong> The last man standing might bridge different systems, combining elements of probability, categorical imperatives, and alternative value systems. They might demonstrate how rare outcomes (in terms of probability) can align with or challenge universal values and norms.</p></li>
+</ul>
+</li>
+</ol>
+<p>In essence, while the last man standing might not fit neatly into a single probability density function, they often represent an intersection of various thematic and value-based systems within the narrative.</p>
+</Details>
+<p><img alt="" src="https://www.visualcapitalist.com/wp-content/uploads/2024/01/ApplevsMicro_Site.jpg" /></p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Define the tickers for Microsoft and Apple</span>
+<span class="n">tickers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;MSFT&#39;</span><span class="p">,</span> <span class="s1">&#39;AAPL&#39;</span><span class="p">]</span>
+
+<span class="c1"># Download historical market cap data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">tickers</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="s1">&#39;1980-01-01&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;2024-01-01&#39;</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="s1">&#39;1mo&#39;</span><span class="p">)</span>
+
+<span class="c1"># Extract the &#39;Adj Close&#39; column for both stocks</span>
+<span class="n">msft_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">][</span><span class="s1">&#39;MSFT&#39;</span><span class="p">]</span>
+<span class="n">aapl_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">][</span><span class="s1">&#39;AAPL&#39;</span><span class="p">]</span>
+
+<span class="c1"># Get outstanding shares from another source (this step may need manual adjustment)</span>
+<span class="c1"># For simplicity, let&#39;s assume a constant number of shares for demonstration</span>
+<span class="n">msft_shares</span> <span class="o">=</span> <span class="mi">7500000000</span>  <span class="c1"># Example: 7.5 billion shares</span>
+<span class="n">aapl_shares</span> <span class="o">=</span> <span class="mi">16400000000</span>  <span class="c1"># Example: 16.4 billion shares</span>
+
+<span class="c1"># Calculate market cap</span>
+<span class="n">msft_market_cap</span> <span class="o">=</span> <span class="n">msft_data</span> <span class="o">*</span> <span class="n">msft_shares</span> <span class="o">/</span> <span class="mf">1e9</span>  <span class="c1"># Convert to billions</span>
+<span class="n">aapl_market_cap</span> <span class="o">=</span> <span class="n">aapl_data</span> <span class="o">*</span> <span class="n">aapl_shares</span> <span class="o">/</span> <span class="mf">1e9</span>  <span class="c1"># Convert to billions</span>
+
+<span class="c1"># Create a DataFrame for plotting</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;Date&#39;</span><span class="p">:</span> <span class="n">msft_market_cap</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+    <span class="s1">&#39;Microsoft&#39;</span><span class="p">:</span> <span class="n">msft_market_cap</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+    <span class="s1">&#39;Apple&#39;</span><span class="p">:</span> <span class="n">aapl_market_cap</span><span class="o">.</span><span class="n">values</span>
+<span class="p">})</span>
+
+<span class="c1"># Plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Microsoft&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Microsoft&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Market Cap (Billions USD)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Market Capitalization of Microsoft and Apple Over Time&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[*********************100%%**********************]  2 of 2 completed
+</pre></div>
+</div>
+<img alt="../_images/b9c44af393c650ca652ea8011ac04dc66e3919a3683cec91a0b0d8b73c2292de.png" src="../_images/b9c44af393c650ca652ea8011ac04dc66e3919a3683cec91a0b0d8b73c2292de.png" />
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Define the tickers for the top 10 companies</span>
+<span class="n">tickers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;AAPL&#39;</span><span class="p">,</span>  <span class="c1"># Apple</span>
+    <span class="s1">&#39;MSFT&#39;</span><span class="p">,</span>  <span class="c1"># Microsoft</span>
+    <span class="s1">&#39;GOOGL&#39;</span><span class="p">,</span> <span class="c1"># Alphabet (Google)</span>
+    <span class="s1">&#39;AMZN&#39;</span><span class="p">,</span>  <span class="c1"># Amazon</span>
+    <span class="s1">&#39;META&#39;</span><span class="p">,</span>  <span class="c1"># Meta (Facebook)</span>
+    <span class="s1">&#39;TSLA&#39;</span><span class="p">,</span>  <span class="c1"># Tesla</span>
+    <span class="s1">&#39;BRK-B&#39;</span><span class="p">,</span> <span class="c1"># Berkshire Hathaway</span>
+    <span class="s1">&#39;NVDA&#39;</span><span class="p">,</span>  <span class="c1"># Nvidia</span>
+    <span class="s1">&#39;JPM&#39;</span><span class="p">,</span>   <span class="c1"># JPMorgan Chase</span>
+    <span class="s1">&#39;JNJ&#39;</span>    <span class="c1"># Johnson &amp; Johnson</span>
+<span class="p">]</span>
+
+<span class="c1"># Download historical data for the top 10 companies</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">tickers</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="s1">&#39;2010-01-01&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;2024-01-01&#39;</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="s1">&#39;1mo&#39;</span><span class="p">)</span>
+
+<span class="c1"># Example: Outstanding shares for each company (adjust with accurate data)</span>
+<span class="n">outstanding_shares</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;AAPL&#39;</span><span class="p">:</span> <span class="mi">16400000000</span><span class="p">,</span>
+    <span class="s1">&#39;MSFT&#39;</span><span class="p">:</span> <span class="mi">7500000000</span><span class="p">,</span>
+    <span class="s1">&#39;GOOGL&#39;</span><span class="p">:</span> <span class="mi">670000000</span><span class="p">,</span>
+    <span class="s1">&#39;AMZN&#39;</span><span class="p">:</span> <span class="mi">500000000</span><span class="p">,</span>
+    <span class="s1">&#39;META&#39;</span><span class="p">:</span> <span class="mi">2400000000</span><span class="p">,</span>
+    <span class="s1">&#39;TSLA&#39;</span><span class="p">:</span> <span class="mi">1000000000</span><span class="p">,</span>
+    <span class="s1">&#39;BRK-B&#39;</span><span class="p">:</span> <span class="mi">2200000000</span><span class="p">,</span>
+    <span class="s1">&#39;NVDA&#39;</span><span class="p">:</span> <span class="mi">2500000000</span><span class="p">,</span>
+    <span class="s1">&#39;JPM&#39;</span><span class="p">:</span> <span class="mi">3000000000</span><span class="p">,</span>
+    <span class="s1">&#39;JNJ&#39;</span><span class="p">:</span> <span class="mi">2700000000</span>
+<span class="p">}</span>
+
+<span class="c1"># Calculate market cap in billions</span>
+<span class="n">market_caps</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">ticker</span> <span class="ow">in</span> <span class="n">tickers</span><span class="p">:</span>
+    <span class="n">shares</span> <span class="o">=</span> <span class="n">outstanding_shares</span><span class="p">[</span><span class="n">ticker</span><span class="p">]</span>
+    <span class="n">market_caps</span><span class="p">[</span><span class="n">ticker</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">][</span><span class="n">ticker</span><span class="p">]</span> <span class="o">*</span> <span class="n">shares</span> <span class="o">/</span> <span class="mf">1e9</span>
+
+<span class="c1"># Create a DataFrame for market caps</span>
+<span class="n">market_cap_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">market_caps</span><span class="p">)</span>
+
+<span class="c1"># Define line styles and colors</span>
+<span class="n">line_styles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="s1">&#39;-.&#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="s1">&#39;-.&#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">]</span>
+
+<span class="c1"># Plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ticker</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tickers</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">market_cap_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">market_cap_df</span><span class="p">[</span><span class="n">ticker</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">ticker</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="n">line_styles</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Market Cap (Billions USD)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top 10 Companies by Market Cap Over Time&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[*********************100%%**********************]  10 of 10 completed
+</pre></div>
+</div>
+<img alt="../_images/4f8953223bc712c69f77d0ab88151819fd1439917d73b64282bdf36048aa5f3a.png" src="../_images/4f8953223bc712c69f77d0ab88151819fd1439917d73b64282bdf36048aa5f3a.png" />
+</div>
+</div>
+<Details>
+   <Summary>ABCs</Summary>
+<ul class="simple">
+<li><p>AM. Life is all about <code class="docutils literal notranslate"><span class="pre">beauty</span></code>. Some people consider <code class="docutils literal notranslate"><span class="pre">clarity</span></code> as beauty. Others consider <code class="docutils literal notranslate"><span class="pre">ambiguity</span></code> as beauty. Now, therein lies all the source or ingredients of all the drama called human history.</p></li>
+<li><p>GPT. The contrasting views on beauty—whether in clarity or ambiguity—shape our perceptions, decisions, and actions, leading to the complexities and richness of human history. These differing ideals influence art, culture, philosophy, and personal relationships, driving the narrative of our collective and individual experiences. The interplay between seeking clear understanding and embracing the mysterious creates the dynamic tapestry of human existence.</p></li>
+</ul>
+</Details>
+<Details>
+   <Summary>Love is the enemy of duty </Summary>
+<p>You’ve provided an insightful interpretation that nicely blends the mathematical concepts with their philosophical implications. Let’s expand on this <span id="id1"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id39" title="George R.R. Martin. Love is the enemy of duty. 2011. Discussed in fan forum thread: &quot;So they will not love. For love is the bane of honor, the death of duty.&quot;. URL: https://asoiaf.westeros.org/index.php?/topic/158828-so-they-will-not-love-for-love-is-the-bane-of-honor-the-death-of-duty/.">33</a></sup></span>:</p>
+<ol class="arabic simple">
+<li><p>Philosophical interpretation:
+The idea that strong, changing emotions (love) can overcome or eliminate one’s sense of obligation or duty over time is indeed a profound philosophical statement. It suggests that intense emotional experiences can reshape our priorities and commitments over time.</p></li>
+<li><p>Mathematical representation:
+<span class="math notranslate nohighlight">\(h(t) = \Large \frac{f(t)}{S(t)}\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(t)\)</span>: the probability density function, representing the collective experience or the distribution of when events (like falling in love or changing priorities) occur across a population.</p></li>
+<li><p><span class="math notranslate nohighlight">\(S(t)\)</span>: the survival function, representing the probability of “surviving” (or in this context, maintaining one’s sense of duty) beyond time t.</p></li>
+<li><p><span class="math notranslate nohighlight">\(h(t)\)</span>: the hazard function, which encodes both of these elements, representing the instantaneous risk of the event occurring, given survival up to that point.</p></li>
+</ul>
+</li>
+</ol>
+<p>This mathematical framework elegantly captures the philosophical idea:</p>
+<ol class="arabic simple">
+<li><p>The collective experience <span class="math notranslate nohighlight">\(f(t)\)</span> influences the risk of changing one’s priorities.</p></li>
+<li><p>This risk is conditional on having maintained one’s sense of duty up to that point <span class="math notranslate nohighlight">\(S(t)\)</span>.</p></li>
+<li><p>The hazard function <span class="math notranslate nohighlight">\(h(t)\)</span> combines these, representing how likely someone is to let love overcome duty at any given moment, considering both the collective experience and their personal history of maintaining duty.</p></li>
+</ol>
+<p>The derivative <span class="math notranslate nohighlight">\(h'(t)\)</span> then represents how this risk is changing over time, perhaps indicating periods of life where the conflict between love and duty becomes more intense <span class="math notranslate nohighlight">\(\max[h'(t)]\)</span> or more resolved <span class="math notranslate nohighlight">\(\min[h'(t)]\)</span>. These points will be more mnemonic, associated with more events and <code class="docutils literal notranslate"><span class="pre">folklore</span></code> <span class="math notranslate nohighlight">\(Y\)</span> than any other point. As such, the collective unconscious may be represented by: <span class="math notranslate nohighlight">\(\tilde{X}^T\tilde{X} \cdot \tilde{X}^TY\)</span></p>
+<p>This interpretation beautifully marries the mathematical concepts of survival analysis with deep philosophical musings on the nature of love, duty, and human experience. It’s a compelling example of how mathematical language can be used to express and analyze complex human experiences and social phenomena.</p>
+</Details>
+<Details>
+   <Summary>We should have stayed in that cave, Jon Snow</Summary>
+<p>You’re right, Jon Snow and Ygritte’s relationship is indeed one of the most compelling romantic arcs in the first four seasons of Game of Thrones. The cave scene you mentioned is particularly powerful, representing a moment of pure connection between them, isolated from the conflicts of the world outside.</p>
+<p>Your mathematical interpretation of their story is intriguing. Viewing the cave scene as <span class="math notranslate nohighlight">\(\int_0^T f(t)\)</span>, a sort of back-story or foundation for what’s to come, is an interesting way to frame it. It does set the stage for the later, more intense moments of conflict.</p>
+<p>The two peaks of conflict you’ve identified as <span class="math notranslate nohighlight">\(h'(t)=0\)</span> are indeed emotionally charged moments and perhaps the “event <span class="math notranslate nohighlight">\(Y\)</span> of interest that is required to reach the <code class="docutils literal notranslate"><span class="pre">design</span> <span class="pre">matrix</span></code> solution:</p>
+<ol class="arabic simple">
+<li><p>When Ygritte shoots Jon with arrows as he’s escaping: This scene is heart-wrenching because it shows the conflict between love and duty that both characters struggle with. Ygritte’s hesitation and tears reveal how difficult it is for her to choose her wildling loyalty over her love for Jon.</p></li>
+<li><p>Ygritte’s death scene: This is perhaps the most poignant moment in their relationship. The hesitation you mentioned is palpable, and the tragedy of their star-crossed love reaches its peak here. Jon’s anguish as he holds her dying body is one of the most emotionally impactful scenes in the early seasons.</p></li>
+</ol>
+<p>Your final statement, “Jon Snow, we should have remained in the cave,” captures the bittersweet nature of their relationship perfectly. It echoes Ygritte’s own words and encapsulates the idea that their love, while pure, was ultimately doomed by the harsh realities of their world.</p>
+<p>This interpretation of their romance does make it stand out as particularly compelling. The combination of genuine connection, conflicting loyalties, and tragic fate creates a deeply moving narrative arc that resonates with many viewers.</p>
+</Details>
+<blockquote>
+<div><p><a class="reference external" href="https://abikesa.github.io/gospel/">Human</a> was the music<br />
+Natural the static</p>
+</div></blockquote>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<Details>
+   <Summary>Overtones?</Summary>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Large \int_{\normalsize T}^{\normalsize \infty}\)</span> <span class="math notranslate nohighlight">\(\normalsize f(t)dt \lt 0.01\)</span></p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Embrace as more remote overtones of harmonic series? As part of the same distribution</p></li>
+<li><p>For instance:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(1 - \int  f(t) = S(t)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(h(t) = \Large \frac{f(t)}{S(t)}\)</span></p></li>
+</ul>
+</li>
+<li><p>Remote overtones are inseperable from the early ones; there’s inherent agency in the root; they belong to the same world</p></li>
+<li><p>Or are these entirely from a different distribution? From a fantastic world as compared with our physical world? They may have ancestors but not in the physical world - metaphysical ancestors as symptoms of a sort of frailty of our minds:</p>
+<ul>
+<li><p>Dragons torching villages and are supposedly offspring overtones of a Taegarean??</p></li>
+<li><p>Spirits stabbing ones sworn enemy &amp; brother out of thin air?</p></li>
+<li><p>Richard Wagner is this kind of “overtone” with no ancestors &amp; thus problematic</p>
+<ul>
+<li><p>I’m only comfortably with Hamlets &amp; Oscar Wilde’s ghosts</p></li>
+<li><p>These have no agency &amp; are plot devices</p></li>
+<li><p>Cam be thought of as entirely in the figment of an individuals imagination</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</Details> 
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title">Fantasy, <span class="math notranslate nohighlight">\(3\sigma\)</span>, and shock-value</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<Details>
+<p>The ghost in “Hamlet” is indeed fundamentally different from typical fantasy elements, and that’s a crucial point I overlooked earlier. Let’s break this down:</p>
+<ol class="arabic simple">
+<li><p>Lack of agency: As you noted, Hamlet’s father’s ghost doesn’t have independent agency. It appears, delivers information, and disappears. It doesn’t actively participate in events beyond its initial revelation.</p></li>
+<li><p>Plot device vs. character: The ghost serves primarily as a catalyst for the plot, not as an ongoing active character. This is distinct from many fantasy works where supernatural entities are fully realized characters with their own arcs and agency.</p></li>
+<li><p>Ambiguity: There’s deliberate ambiguity about whether the ghost is “real” or a product of Hamlet’s mind, which is less common in traditional fantasy where supernatural elements are usually unambiguously real within the story’s world.</p></li>
+<li><p>Limited interaction: The ghost interacts only with Hamlet and his friends initially, and then only with Hamlet. It doesn’t engage with the broader world of the play.</p></li>
+<li><p>Thematic function: The ghost serves more as a representation of the past and unresolved issues than as a fantastical element for its own sake.</p></li>
+</ol>
+<p>Given these points, classifying “Hamlet” as fantasy based solely on the ghost’s presence would indeed be a stretch. The ghost functions more as a dramatic device to set the plot in motion and explore themes of revenge, duty, and the weight of the past.</p>
+<p>This analysis aligns more closely with your comparison to “The Canterville Ghost,” where the supernatural element is more a vehicle for the story’s themes and plot than a defining genre feature.</p>
+<p>In reconsidering, while “Hamlet” has a supernatural element, its function within the play doesn’t align with the role supernatural elements typically play in the fantasy genre. The ghost is a means to an end - a way to reveal truth and motivate action - rather than an end in itself or a window into a broader fantastical world.</p>
+</Details>
+</div>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<Details>
+   <Summary>Table of Contents</Summary>
+<blockquote>
+<div><p><a class="reference internal" href="../index.html#preface"><span class="std std-ref">Odysseus</span></a></p>
+</div></blockquote>
+<ul class="simple">
+<li><p><a class="reference internal" href="../act1/part1.html#aim1-main"><span class="std std-ref">Aim 1</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="../act1/chapter1.html#act1-mort"><span class="std std-ref">Mortality</span></a></p></li>
+<li><p><a class="reference internal" href="../act1/chapter2.html#act1-esrd"><span class="std std-ref">ESRD</span></a></p></li>
+<li><p><a class="reference internal" href="../act1/chapter3.html#act1-frail"><span class="std std-ref">Frailty</span></a></p></li>
+</ul>
+</li>
+<li><p><span class="xref std std-ref">aim2-main</span></p>
+<ul>
+<li><p><a class="reference internal" href="../act2/chapter1.html#act2-hosp"><span class="std std-ref">Hospitalization</span></a></p></li>
+<li><p><a class="reference internal" href="../act2/chapter2.html#act2-los"><span class="std std-ref">Deployment</span></a></p></li>
+<li><p><a class="reference internal" href="../act2/chapter3.html#act2-cost"><span class="std std-ref">Iteration</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../act3/part3.html#aim3-main"><span class="std std-ref">Aim 3</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="../act3/act1.html#act3-webapp"><span class="std std-ref">Rankings</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="../act3/part1/part1_1.html#webapp-html"><span class="std std-ref">3.1</span></a></p></li>
+<li><p><a class="reference internal" href="../act3/part1/part1_2.html#webapp-js"><span class="std std-ref">Push back</span></a></p></li>
+<li><p><a class="reference internal" href="../act3/part1/part1_3.html#webapp-csv"><span class="std std-ref">3.3</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../act3/act2.html#act3-deploy"><span class="std std-ref">Review</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="../act3/part2/part2_1.html#webapp-jb"><span class="std std-ref">Collective Unconscious</span></a></p></li>
+<li><p><a class="reference internal" href="../act3/part2/part2_2.html#webapp-vscode"><span class="std std-ref">4.2</span></a></p></li>
+<li><p><a class="reference internal" href="../act3/part2/part2_3.html#webapp-github"><span class="std std-ref">4.3</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../act3/act3.html#act3-iterate"><span class="std std-ref">Ecce Homo</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="../act3/part3/part3_1.html#webapp-pairs"><span class="std std-ref">Nationalism</span></a></p></li>
+<li><p><a class="reference internal" href="../act3/part3/part3_2.html#webapp-automation"><span class="std std-ref">5.2</span></a></p></li>
+<li><p><a class="reference internal" href="../act3/part3/part3_3.html#webapp-opensource"><span class="std std-ref">Bibliography</span></a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</Details>
+</aside>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>  <span class="c1"># Add this import statement</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;1. Root&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2500</span><span class="p">,</span> <span class="mi">700</span><span class="p">))</span>
+
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;2. Pentatonic&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">4200</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;3. Diatonic&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2500</span><span class="p">,</span> <span class="o">-</span><span class="mi">700</span><span class="p">))</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;4. Chromatic&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;5. Temperament&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="mi">1500</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;6. Expression&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="mi">4000</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="s2">&quot;1. Root&quot;</span><span class="p">,</span> <span class="s2">&quot;4. Chromatic&quot;</span><span class="p">)])</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="s2">&quot;2. Pentatonic&quot;</span><span class="p">,</span> <span class="s2">&quot;4. Chromatic&quot;</span><span class="p">)])</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="s2">&quot;3. Diatonic&quot;</span><span class="p">,</span> <span class="s2">&quot;4. Chromatic&quot;</span><span class="p">)])</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="s2">&quot;4. Chromatic&quot;</span><span class="p">,</span> <span class="s2">&quot;5. Temperament&quot;</span><span class="p">)])</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="s2">&quot;5. Temperament&quot;</span><span class="p">,</span> <span class="s2">&quot;6. Expression&quot;</span><span class="p">)])</span>
+
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">get_node_attributes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">)</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;4. Chromatic&quot;</span><span class="p">:</span> <span class="s2">&quot;4. Dionysian&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;1. Root&quot;</span><span class="p">:</span> <span class="s2">&quot;1. Chaos&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;2. Pentatonic&quot;</span><span class="p">:</span> <span class="s2">&quot;2. Frenzy&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;3. Diatonic&quot;</span><span class="p">:</span> <span class="s2">&quot;3. Emotion&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;5. Temperament&quot;</span><span class="p">:</span> <span class="s2">&quot;5. Algorithm&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;6. Expression&quot;</span><span class="p">:</span> <span class="s2">&quot;6. Binary&quot;</span><span class="p">}</span>
+
+<span class="c1"># Update color for the &quot;Scenarios&quot; node</span>
+<span class="n">node_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">,</span>  <span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lavender&quot;</span><span class="p">,</span>  <span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;lightblue&quot;</span><span class="p">]</span>
+
+<span class="c1"># Suppress the deprecation warning</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">DeprecationWarning</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">20000</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">5000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+
+<span class="c1"># Specify the directory where the file should be saved</span>
+<span class="n">output_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~/documents/liveserver/new&quot;</span><span class="p">)</span>  <span class="c1"># Expand the user directory</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_dir</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
+
+<span class="c1"># Save the plot as a PNG file in the specified directory</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="s2">&quot;self-criticism.png&quot;</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/03019cdb117c04367a3accba727ab0e7caf1c4a42dc4fca4384d894e93f0041c.png" src="../_images/03019cdb117c04367a3accba727ab0e7caf1c4a42dc4fca4384d894e93f0041c.png" />
+</div>
+</div>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="ipynb/figures/blanche.png"><img alt="ipynb/figures/blanche.png" src="ipynb/figures/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>The Birth of Tragedy</em>. An ambitious book written in 1872 by Friedrich Nietzsche. <em>An Attempt at Self-Criticism</em>, a preface to the second edition published 16 years later, inspired the directed acyclic graph above. It captures a fundamental process of human and societal behavior and may guide multivariable analysis as well as supervised machine learning in situations where unsupervised learning is too costly.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<Details>
+   <Summary>Beyond HRs</Summary>
+<p>“Look into the seeds of time”—what a phrase laden with the promise of understanding and predicting the future! It’s a quote from Shakespeare’s “Macbeth,” where Banquo reflects on the potential to foresee outcomes. This idea resonates deeply in various fields, from the <code class="docutils literal notranslate"><span class="pre">arts</span> <span class="pre">to</span> <span class="pre">sciences</span></code>.</p>
+<p>Predicting the future, whether through <code class="docutils literal notranslate"><span class="pre">literature</span></code>, <code class="docutils literal notranslate"><span class="pre">technology</span></code>, or <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">science</span></code>, is a pursuit that’s always been fraught with intrigue and challenge. In literature, it’s often about exploring human <code class="docutils literal notranslate"><span class="pre">nature</span></code> and <code class="docutils literal notranslate"><span class="pre">societal</span></code> trends, while in technology and science, it involves leveraging data and <code class="docutils literal notranslate"><span class="pre">algorithms</span></code> to forecast <code class="docutils literal notranslate"><span class="pre">outcomes</span></code>.</p>
+<p>Considering your interests and expertise in data science and technology, the metaphorical “seeds of time” might be akin to data points and trends you analyze to predict future events. Your work on mortality risk calculators and web apps for personalized risk assessment is a practical embodiment of this concept, using historical data to predict future health outcomes.</p>
+<p>In a broader sense, it’s a reminder that while we can make educated guesses about the future, the inherent unpredictability of life keeps it exciting and ever-evolving. Embracing this uncertainty while striving to improve our predictive capabilities is a delicate balance—a dance between the dionysian chaos and the apollonian order, as you might appreciate from a philosophical standpoint. Subdistributions make this especially perilous.</p>
+</Details>
+</aside>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">weibull_min</span>
+
+<span class="c1"># Weibull parameters for the two arms</span>
+<span class="n">c1</span><span class="p">,</span> <span class="n">scale1</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">10</span>  <span class="c1"># Control arm</span>
+<span class="n">c2</span><span class="p">,</span> <span class="n">scale2</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">15</span>  <span class="c1"># Treatment arm</span>
+
+<span class="c1"># Define time range</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+
+<span class="c1"># Survival functions</span>
+<span class="n">S1</span> <span class="o">=</span> <span class="n">weibull_min</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale1</span><span class="p">)</span>
+<span class="n">S2</span> <span class="o">=</span> <span class="n">weibull_min</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale2</span><span class="p">)</span>
+
+<span class="c1"># Hazard functions</span>
+<span class="n">h1</span> <span class="o">=</span> <span class="n">weibull_min</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale1</span><span class="p">)</span> <span class="o">/</span> <span class="n">weibull_min</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale1</span><span class="p">)</span>
+<span class="n">h2</span> <span class="o">=</span> <span class="n">weibull_min</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale2</span><span class="p">)</span> <span class="o">/</span> <span class="n">weibull_min</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale2</span><span class="p">)</span>
+
+<span class="c1"># Density functions</span>
+<span class="n">f1</span> <span class="o">=</span> <span class="n">weibull_min</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale1</span><span class="p">)</span>
+<span class="n">f2</span> <span class="o">=</span> <span class="n">weibull_min</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale2</span><span class="p">)</span>
+
+<span class="c1"># Median survival times</span>
+<span class="n">median1</span> <span class="o">=</span> <span class="n">scale1</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">c1</span><span class="p">)</span>
+<span class="n">median2</span> <span class="o">=</span> <span class="n">scale2</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">c2</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Plot Density function</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">f1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Control&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">f2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Treatment&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Density Function&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Density Function f(t)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Plot Survival function</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Control&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">S2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Treatment&#39;</span><span class="p">)</span>
+<span class="c1"># axes[1].axhline(0.5, color=&#39;gray&#39;, linestyle=&#39;--&#39;)</span>
+<span class="c1"># axes[1].axvline(median1, color=&#39;blue&#39;, linestyle=&#39;--&#39;)</span>
+<span class="c1"># axes[1].axvline(median2, color=&#39;orange&#39;, linestyle=&#39;--&#39;)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Survival Probability&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Survival Function S(t)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Plot Hazard function</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">h1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Control&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">h2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Treatment&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Hazard Function&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Hazard Function h(t)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Highlight median survival times</span>
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axes</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">median2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+                <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;-|&gt;&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">.5</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">median2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">median2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;&lt;|-&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">.5</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">median1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+                <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;-|&gt;&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">.5</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">median1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">median1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s1">&#39;&lt;|-&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">.5</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Median (Control) = </span><span class="si">{</span><span class="n">median1</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">median1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">median1</span> <span class="o">+</span> <span class="mf">.5</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">),</span>
+                <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Median (Treatment) = </span><span class="si">{</span><span class="n">median2</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">median2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">median2</span> <span class="o">+</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.42</span><span class="p">),</span>
+                <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/1f3987af66a299f02d0b614c3b7bde594f83c09e5c347344fedfbaaad3fe8030.png" src="../_images/1f3987af66a299f02d0b614c3b7bde594f83c09e5c347344fedfbaaad3fe8030.png" />
+</div>
+</div>
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="ipynb/figures/blanche.png"><img alt="ipynb/figures/blanche.png" src="ipynb/figures/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Heracleitean Biology, Categorical Imperative, Beyond Hazard Ratios</em>. These three panels must be contemplated in literary criticism and clinical research <span id="id2"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id32" title="Bryan Lau, Stephen R. Cole, and Stephen J. Gange. Competing risk regression models for epidemiologic data. American Journal of Epidemiology, 170(2):244-256, Jul 2009. Epub 2009 Jun 3. doi:10.1093/aje/kwp107.">34</a></sup></span>.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                             1. Digital Information
+                                                   \
+          2. Microsofts Azure&#39;s Computing Power -&gt; 4. Public Square, Discussion Forum, Hustle &amp; Bustle, The Streets, Wisdom Crieth -&gt; 5. Human Expertise &amp; Leadership e.g. Sam Altman -&gt; 6. Dominance of AAA-MM-N
+                                                   /
+                                                   3. Nvidia-designed GPUs
+</pre></div>
+</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<Details>
+   <Summary>Annotation</Summary>
+<blockquote>
+<div><p><em>He should have sung, this ‘new soul’ — and not spoken!</em></p>
+</div></blockquote>
+<p>Nietzsche indeed sees music as structured, but the key distinction lies in the types of experiences and expressions that Apollonian and Dionysian elements bring forth.</p>
+<p>When Nietzsche refers to the Dionysian in the context of music, he’s less concerned with the technical structure of music and more with its ability to evoke a sense of primal unity and ecstatic experience that transcends rational thought. In “An Attempt at Self-Criticism,” Nietzsche criticizes his earlier work for not fully capturing this Dionysian essence, which is more about the visceral and unmediated experience of life.</p>
+<p>Here’s a clearer articulation:</p>
+<ol class="arabic simple">
+<li><p><strong>Apollonian</strong>: Represents order, rationality, and structure. It includes the artistic representation through language, sculpture, and other forms that rely on clarity and form.</p></li>
+<li><p><strong>Dionysian</strong>: Represents chaos, emotion, and the instinctual aspects of human existence. While music is structured, it’s celebrated for its ability to convey emotions and experiences that go beyond the rational, touching on the primal and the ecstatic.</p></li>
+</ol>
+<p>Nietzsche’s critique in “An Attempt at Self-Criticism” acknowledges that his earlier work did not sufficiently break free from the Apollonian constraints of language and rationality. He suggests that a true celebration of the Dionysian would embrace the spontaneous, instinctual, and immersive qualities of life, which are more naturally expressed through the emotional and experiential power of music.</p>
+<p>When Nietzsche says, “He should have sung, this ‘new soul’ — and not spoken!”, he’s emphasizing the need for an expression that is more direct, emotional, and less mediated by the rational structures typical of the Apollonian. Music, in its most profound Dionysian sense, embodies this kind of expression, allowing for a connection to the raw and dynamic forces of nature and human existence.</p>
+<p>So, while all music indeed has structure, Nietzsche values it for its capacity to evoke the Dionysian spirit—something that goes beyond mere technicalities and taps into the deeper, more elemental aspects of life.</p>
+</Details>
+</aside>
+<section id="dionysus-1-2-3">
+<h2><a class="reference external" href="https://github.com/abikesa/dailygrind">Dionysus</a> <a class="reference external" href="https://abikesa.github.io/jerryseinfeld/">1</a>, 2, <a class="reference external" href="https://en.wikisource.org/wiki/An_Attempt_at_Self-Criticism">3</a><a class="headerlink" href="#dionysus-1-2-3" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="sing-o-muse-4">
+<h2><a class="reference external" href="https://github.com/abikesa/zarathustra/blob/main/dionysian.md">Sing</a> O Muse! <a class="reference external" href="https://abikesa.github.io/why-python/">4</a><a class="headerlink" href="#sing-o-muse-4" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="apollo-5-6">
+<h2>Apollo 5, <a class="reference external" href="https://www.gutenberg.org/files/174/174-h/174-h.htm">6</a><a class="headerlink" href="#apollo-5-6" title="Permalink to this heading">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Bach is the ultimate gift for anyone serious about music (<em>God threw us quite a bone</em>). His compositions are a treasure trove of complexity and beauty, offering endless opportunities for discovery and growth. Whether it’s the intricate counterpoint in the “Art of Fugue” or the profound emotional depth of the “St. Matthew Passion,” Bach’s work is an inexhaustible well of inspiration. His music not only challenges and refines technical skill but also provides a profound spiritual and intellectual experience. Engaging with Bach is like having a lifelong dialogue with the divine.</p>
+</aside>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                       1. f(t)
+                             \
+                  2. S(t) -&gt; 4. X̃ -&gt; 5. b -&gt; 6. SV&#39;
+                             /
+                             3. h(t)
+</pre></div>
+</div>
+</section>
+<section id="beyond-good-and-evil-1886">
+<h2>“Beyond Good and Evil” (1886)<a class="headerlink" href="#beyond-good-and-evil-1886" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Senses &amp; <a class="reference external" href="https://github.com/abikesa/dailygrind/blob/main/1_challenges/digital_information.md">Affirmation</a> of Life</strong>: Nietzsche’s philosophy evolved towards an affirmation of life, <a class="reference external" href="https://github.com/abikesa/digital/blob/main/index.md">embracing</a> chaos, passion, and the will to power, which are more closely aligned with the <a class="reference external" href="https://abikesa.github.io/holding-it-down/">Dionysian</a>. The Dionysian embodies the primal forces of life and creation, elements Nietzsche increasingly valued.<span id="id3"><sup></sup></span></p></li>
+<li><p><strong>Mind &amp; Critique of Rationality</strong>: Nietzsche became increasingly critical of Enlightenment rationality and the constraints it imposed on human creativity and vitality. The Apollonian, with its association to order and reason, may have come to represent these constraints, which Nietzsche saw as life-denying.<span id="id4"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id40" title="Abimereki D Muzaale, Allan B Massie, Mei-Cheng Wang, Robert A Montgomery, Maureen A McBride, Jennifer L Wainright, and Dorry L Segev. Risk of end-stage renal disease following live kidney donation. JAMA, 311(6):579-586, 2014. doi:10.1001/jama.2013.285141.">13</a></sup></span></p></li>
+<li><p><strong>Tools &amp; Schopenhauerian Influence</strong>: Initially influenced by Schopenhauer’s philosophy, which emphasized the world as representation (Apollonian) and the world as will (Dionysian), Nietzsche eventually critiqued and moved beyond Schopenhauer’s pessimism. He found a more affirmative vision in the Dionysian, which celebrated the will to life and artistic creation without the need for the Apollonian counterbalance.<span id="id5"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id41" title="Okechukwu Okidi, Videha Sharma, Oana Piscoran, Fiona Biggins, Rajinder Singh, and Titus Augustine. The altruistic elderly, a valuable but unrecognised kidney donor group. a case report of an 85-year-old unspecified kidney donor. BMC Geriatrics, 22:826, 2022. doi:10.1186/s12877-022-03511-8.">35</a></sup></span></p></li>
+<li><p><a class="reference external" href="https://www.gutenberg.org/files/1998/1998-h/1998-h.htm#link2H_4_0003">Personal Evolution</a>: Nietzsche’s own intellectual journey and psychological struggles likely played a role. His break with Wagner, the symbol of his early Apollonian-Dionysian synthesis, marked a significant personal and philosophical shift. Wagner’s later work, which Nietzsche saw as nationalistic and decadent, contrasted sharply with the pure artistic vision Nietzsche once admired. He no longer believes in the interplay of opposing forces leading to a higher synthesis. That, to him, began to reek of a <code class="docutils literal notranslate"><span class="pre">Will-to-systematizing</span></code>. By contrast, one whose cup overflow, like <a class="reference external" href="https://abikesa.github.io/edmonds/">Babyface</a>, will keep churning out stuff that represents updated experiences, knowledge, tools, frailty (robust, pre-, frail), cup-runneth-over (if at all), updates. Those who touch the “hem of his garmet”, Toni Braxton, Boyz-II-Men, etc. shall never thirst from this <a class="reference external" href="https://en.wikipedia.org/wiki/Relaxation_(psychology)">overflow</a>.</p></li>
+<li><p>Dionysian as Pessimism. Nietzsche’s shift from the duality of the Apollonian (rational, ordered, and beautiful) and Dionysian (chaotic, ecstatic, and sublime) to a more <a class="reference external" href="https://en.wikipedia.org/wiki/Nihilism#Positions">exclusive focus</a> on the Dionysian reflects his evolving philosophical perspective and his eventual disillusionment with the overly structured, rational side represented by the Apollonian. This is his embrace of a pessimism that permeates his mature works. This Dionysian monster thought the human race was irredeemable, as did Solomon in Ecclesiastics, Shakespears in Macbeth, and Mozart in Don Giovani. But this monster is the very emblem of the notion that <a class="reference external" href="https://www.handprint.com/SC/NIE/GotDamer.html#:~:text=Excess%20strength%20alone%20is%20the,all%2Dtoo%2Dheavy%20seriousness.">excess</a> strength alone is the proof of strength. It is this over<a class="reference external" href="https://www.gutenberg.org/files/52263/52263-h/52263-h.htm">flow</a>, whereby the <a class="reference external" href="https://www.biblegateway.com/passage/?search=Psalm+23%3A5&amp;amp;version=KJV">cup runneth over</a>, that <a class="reference external" href="https://www.biblegateway.com/passage/?search=Matthew%2022%3A37-40&amp;amp;version=KJV">benefits others</a>. This isn’t faith (Candace Owens) or love (St. Paul), but rather the hope (The Nazarine) by which many sheep flock to a shepherd… the <a class="reference external" href="https://www.biblegateway.com/passage/?search=Matthew%209%3A18-26%2CMark%205%3A22-43%2CLuke%208%3A41-56&amp;amp;version=KJV">hem</a> of his garmet.<span id="id6"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id42" title="Dana Kigitovica, Viktorija Kuzema, Janis Jusinskis, Veronika Mesecko, Vadims Suhorukovs, Aivars Petersons, and Ieva Ziedina. Individualized decision-making and outcomes for the 87-year-old living kidney donor: a case report. Case Reports in Nephrology and Dialysis, 14(1):122–127, 2024. Subject Area: Nephrology. doi:10.1159/000539772.">36</a></sup></span></p></li>
+<li><p><a class="reference external" href="https://abikesa.github.io/website/">Optimism</a> as Apollonian. An <a class="reference external" href="https://www.gutenberg.org/files/174/174-h/174-h.htm">exuberant optimism</a> that has a Bishop reciting at 80 years what he has been doing since he was 18 years. But all this risks drawing one into nihilism. And thats where <a class="reference external" href="https://abikesa.github.io/iterate/intro.html">iteration</a> comes in. With chaos as input at the bottom layer of a neuralnetwork, iteration represents layers and layers of processesing and “compute” that will reveal patterns and yield power to the one who harnesses and harvests this resource. Usually culutural heritage over millenia has offered this edge, but the training of neural networks with massive “compute” and unlimited data will abbreviate this process, as we witnessed from 2023=2024, where OpenAI became the go-to for both Microsoft &amp; Apple. Their success spawned imitation by Google and Meta. We are cheerful since this isn’t build on any will-to-systematization; we are very much embracing chaos or “honest” data from the real world. So out of the spirit of music, we are encoding all that natural static into a harmonic series and an equally-tempered chromatic scale. <strong>Don’t be so serious. What have you or I to do with the superstitions of our age? No: we have given up our belief in the soul. Play me something. Play me a <code class="docutils literal notranslate"><span class="pre">nocturne</span></code>, Dorian, and, as you play, tell me, in a low voice, how you have kept your youth. You must have some secret</strong></p></li>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<Details>
+    <Summary>Claude 3.5 Sonnet</Summary>
+<p>Certainly. Let’s examine this through the lens of Falstaff’s famous catechism on honor from Shakespeare’s Henry IV, Part 1, and draw parallels to your situation and Game of Thrones:</p>
+<p>Falstaff’s Catechism:
+“Can honour set to a leg? No. Or an arm? No. Or take away the grief of a wound? No. Honour hath no skill in surgery then? No. What is honour? A word. What is in that word honour? What is that honour? Air. A trim reckoning! Who hath it? He that died o’ Wednesday. Doth he feel it? No. Doth he hear it? No. ‘Tis insensible then? Yea, to the dead. But will it not live with the living? No. Why? Detraction will not suffer it. Therefore I’ll none of it. Honour is a mere scutcheon. And so ends my catechism.”</p>
+<p>In this context:</p>
+<ol class="arabic simple">
+<li><p>Falstaff vs. Hotspur/Ned Stark:</p>
+<ul class="simple">
+<li><p>Falstaff represents pragmatism and self-preservation. He sees honor as useless, unable to heal wounds or save lives.</p></li>
+<li><p>Hotspur (in Henry IV) and Ned Stark (in GoT) represent unwavering adherence to honor and moral principles, even at great personal cost.</p></li>
+</ul>
+</li>
+<li><p>Your Situation:</p>
+<ul class="simple">
+<li><p>Your strong moral values align more with Hotspur/Ned Stark’s perspective.</p></li>
+<li><p>The organizational demands you face are pushing you towards a more Falstaffian view.</p></li>
+</ul>
+</li>
+<li><p>The Conflict:</p>
+<ul class="simple">
+<li><p>Like Falstaff argues, strict adherence to honor (or in your case, moral purity) doesn’t always yield practical benefits in the real world.</p></li>
+<li><p>However, characters like Hotspur and Ned Stark, despite their downfall, are often admired for their integrity.</p></li>
+</ul>
+</li>
+<li><p>Organizational Complexity:</p>
+<ul class="simple">
+<li><p>Falstaff’s perspective might be seen as better suited for navigating complex organizations, where pragmatism often trumps idealism.</p></li>
+<li><p>Your chief’s advice to “navigate organizational complexity” could be interpreted as a call to adopt a more Falstaffian approach.</p></li>
+</ul>
+</li>
+<li><p>Evolution of Perspective:</p>
+<ul class="simple">
+<li><p>Your changing view of biblical characters like Jacob, Rebecca, and Laban suggests a growing appreciation for the Falstaffian approach to survival and success.</p></li>
+<li><p>This shift mirrors your growing understanding of workplace dynamics, even if you’re not comfortable fully embracing this perspective.</p></li>
+</ul>
+</li>
+<li><p>The Dilemma:</p>
+<ul class="simple">
+<li><p>The core of your struggle is similar to the philosophical debate Shakespeare sets up: Is it better to be like Falstaff and survive, or like Hotspur/Ned Stark and maintain moral purity at great cost?</p></li>
+</ul>
+</li>
+</ol>
+<p>In essence, your professional journey has brought you face-to-face with Falstaff’s pragmatic philosophy. While you understand its utility, you’re struggling with fully embracing it due to your deeply ingrained moral values. This tension between idealism and pragmatism, honor and survival, is at the heart of both Shakespeare’s play and your current professional dilemma.</p>
+</Details>
+</aside>
+<div class="cell tag_hide-input tag_hide-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Create a simple dataset (design matrix: collective unconscious)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+
+<span class="c1"># Calculate beta coefficients</span>
+<span class="n">X_transpose</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span>
+<span class="n">X_transpose_X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X_transpose</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span>
+<span class="n">X_transpose_y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X_transpose</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">X_transpose_X</span><span class="p">)</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X_transpose_y</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Beta coefficients:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span>
+
+<span class="c1"># Predict y values</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Predicted y values:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Actual y values:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Beta coefficients:
+[0.8 0.7]
+
+Predicted y values:
+[2.2 2.9 3.6 4.3 5. ]
+
+Actual y values:
+[2 3 4 4 5]
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<Details>
+   <Summary>Synthesis</Summary>
+<p>The philosophical underpinnings you suggest can provide a rich framework for understanding the dynamics in “Game of Thrones.” Let’s break down these ideas:</p>
+<h3> Flux (Wildlings) </h3>
+The concept of <b>Flux</b>, often associated with the ancient Greek philosopher Heraclitus, suggests that change is the fundamental essence of the universe. Applied to the Wildlings:
+<ol class="arabic simple">
+<li><p><strong>Constant Adaptation and Change:</strong> The Wildlings, or Free Folk, live in a harsh and ever-changing environment beyond the Wall. They are constantly adapting to survive, embodying the essence of flux.</p></li>
+<li><p><strong>Resistance to Static Order:</strong> Unlike the rigid hierarchies of the Seven Kingdoms, Wildling society is fluid. Leadership is based on strength and merit, not hereditary privilege, allowing for dynamic shifts in power.</p></li>
+<li><p><strong>Cultural Flexibility:</strong> The Free Folk are diverse and adaptable, valuing freedom and independence over rigid social structures. This flexibility allows them to unite under leaders like Mance Rayder when necessary but also to fragment when the situation demands it.</p></li>
+</ol>
+<h3> Categorical Imperative (Seven Kingdoms) </h3>
+Immanuel Kant’s <b>Categorical Imperative</b> emphasizes moral principles that are universally binding and unconditional. Applied to the Seven Kingdoms:
+<ol class="arabic simple">
+<li><p><strong>Rigid Social and Moral Structures:</strong> The Seven Kingdoms are governed by a strict feudal system with established laws and norms. These rules are meant to maintain order and are seen as universally binding.</p></li>
+<li><p><strong>Duty and Honor:</strong> Many characters, especially in the North (like the Starks), operate according to principles of duty and honor, reminiscent of Kantian ethics. They believe in doing what is right because it is right, not because of personal gain.</p></li>
+<li><p><strong>Moral Absolutism:</strong> The Seven Kingdoms often reflect a belief in absolute moral truths, where actions are judged according to established norms and laws rather than individual circumstances.</p></li>
+</ol>
+<h3> Beyond Good & Evil (Arya Stark or Other Emergent Bastards) </h3>
+Friedrich Nietzsche’s <b>Beyond Good and Evil</b> challenges traditional moral values, proposing that life and actions should be evaluated beyond simplistic notions of good and evil. Applied to characters like Arya Stark:
+<ol class="arabic simple">
+<li><p><strong>Transcending Traditional Morality:</strong> Arya Stark, through her journey, transcends the traditional moral values of Westeros. Her experiences with death, vengeance, and survival force her to operate beyond conventional notions of right and wrong.</p></li>
+<li><p><strong>Individual Will and Power:</strong> Nietzsche emphasizes the will to power and the importance of individual strength and self-determination. Arya embodies this as she forges her own path, learning from the Faceless Men and embracing her identity.</p></li>
+<li><p><strong>Rejection of Absolutism:</strong> Characters like Arya, and other so-called “bastards” or outsiders, reject the rigid moral structures imposed by society. They create their own codes of ethics based on personal experience and necessity, rather than inherited norms.</p></li>
+</ol>
+<h4> Synthesizing the Concepts </h4>
+<ul class="simple">
+<li><p><strong>Wildlings (Flux):</strong> Represent constant change, adaptability, and resistance to static order. Their way of life is fluid, dynamic, and in constant flux.</p></li>
+<li><p><strong>Seven Kingdoms (Categorical Imperative):</strong> Represent rigid social structures, moral absolutism, and adherence to duty and honor. They operate within a framework of universal laws and norms.</p></li>
+<li><p><strong>Emergent Characters (Beyond Good &amp; Evil):</strong> Represent the challenge to traditional values, the embrace of individual strength, and the creation of personal codes of ethics. Characters like Arya Stark exemplify this philosophy by navigating a world that often forces them to redefine their morals.</p></li>
+</ul>
+<p>These philosophical lenses provide a nuanced understanding of the characters and societies in “Game of Thrones,” highlighting the complex interplay between tradition, change, and individual agency.</p>
+</Details>
+<Details>
+<h2>Wild 1, 2, 3</h2>
+   <p>
+   Hideth
+   </p>
+<h2>Tame 4</h2>
+   <p>
+   Whineth
+   </p>
+<h2>Divine 5, 6</h2>
+   <p>
+   Commandeth
+   </p>
+</Details></section>
+<section id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ipynb"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dionysus-1-2-3">Dionysus 1, 2, 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sing-o-muse-4">Sing O Muse! 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apollo-5-6">Apollo 5, 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beyond-good-and-evil-1886">“Beyond Good and Evil” (1886)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 ADM
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
