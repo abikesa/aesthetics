@@ -1,4 +1,0 @@
-(webApp-opensource)=
-# Bibliography
-
-```{bibliography}
