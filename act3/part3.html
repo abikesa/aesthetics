@@ -1,0 +1,874 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Aim 3 &#8212; Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part3';</script>
+    <script src="../_static/script.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Rankings" href="act1.html" />
+    <link rel="prev" title="Iteration" href="../act2/chapter3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://github.com/jhufena/jhufena.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-light" alt="Template - Home"/>
+    <script>document.write(`<img src="https://github.com/jhufena/jhufena.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-dark" alt="Template - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act1/part1.html">Aim 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Mortality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">ESRD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Frailty</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act2/part2.html">Aim 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter1.html">Hospitalization</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter2.html">Length of Stay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter3.html">Outcomes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Aim 3</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="act1.html">WebApp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="part1/part1_1.html">Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part1/part1_2.html">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part1/part1_3.html">Annotation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="act2.html">Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="part2/part2_1.html">GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part2/part2_2.html">4.2</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="part2/part2_3.html">4.3</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="act3.html">Iteration</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="part3/part3_1.html">Latest Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part3/part3_2.html">Bayesian Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part3/part3_3.html">Missingness and A Priori</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/act3/part3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Aim 3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#insurers-pocketed-50-billion-from-medicare-for-diseases-no-doctor-treated">Insurers Pocketed $50 Billion From Medicare for Diseases No Doctor Treated</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questionable-diagnoses-of-hiv-and-other-maladies-triggered-extra-medicare-advantage-payments-its-anatomically-impossible">Questionable diagnoses of HIV and other maladies triggered extra Medicare Advantage payments; ‘It’s anatomically impossible’</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-medicare-pays-insurers">How Medicare pays insurers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-treatment">No treatment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-concerns">Cost concerns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-problems">Vision problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dionysus-1-2-3">Dionysus 1, 2, 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sing-o-muse-4">Sing O Muse 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apollo">Apollo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-4">Math 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-sense-5-6">Common Sense 5, 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaos-and-frenzy-with-the-neighbor">Chaos and Frenzy with the Neighbor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collective-unconscious-and-latency-space">Collective Unconscious and Latency Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-common-sense-and-algorithms">Math, Common Sense, and Algorithms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaos-and-frenzy-with-the-tv-signal">Chaos and Frenzy with the TV Signal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Collective Unconscious and Latency Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Math, Common Sense, and Algorithms</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="aim-3">
+<span id="aim3-main"></span><h1>Aim 3<a class="headerlink" href="#aim-3" title="Permalink to this heading">#</a></h1>
+<Details>
+   <Summary>WSJ</Summary>
+<section id="insurers-pocketed-50-billion-from-medicare-for-diseases-no-doctor-treated">
+<h2>Insurers Pocketed $50 Billion From Medicare for Diseases No Doctor Treated<a class="headerlink" href="#insurers-pocketed-50-billion-from-medicare-for-diseases-no-doctor-treated" title="Permalink to this heading">#</a></h2>
+<section id="questionable-diagnoses-of-hiv-and-other-maladies-triggered-extra-medicare-advantage-payments-its-anatomically-impossible">
+<h3>Questionable diagnoses of HIV and other maladies triggered extra Medicare Advantage payments; ‘It’s anatomically impossible’<a class="headerlink" href="#questionable-diagnoses-of-hiv-and-other-maladies-triggered-extra-medicare-advantage-payments-its-anatomically-impossible" title="Permalink to this heading">#</a></h3>
+<figure class="align-default" id="id4">
+<img alt="https://images.wsj.net/im-973346/?width=2000&amp;size=1.9493177387914" src="https://images.wsj.net/im-973346/?width=2000&amp;size=1.9493177387914" />
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text"><em>ILLUSTRATION:EMIL LENDOF,ISTOCK</em></span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>By Christopher Weaver, Tom McGinty, Anna Wilde Mathews and Mark Maremont | Graphics by Andrew Mollica</p>
+<p>Updated July 8, 2024, 12:08 am EDT</p>
+<p>Gloria Lee was perplexed when the phone calls started coming in from a representative of her Medicare insurer. Could a nurse stop by her Boston home to give her a quick checkup? It was a helpful perk. No cost. In fact, she’d get a $50 gift card <span id="id1"><sup><a class="reference internal" href="part3/part3_3.html#id29" title="Anna Wilde Mathews and Tom McGinty. Insurers pocketed $50 billion from medicare for diseases no doctor treated. The Wall Street Journal, 2024. Accessed: 2024-07-24. URL: https://www.wsj.com/health/healthcare/medicare-health-insurance-diagnosis-payments-b4d99a5d.">23</a></sup></span>.</p>
+<p>After several such calls in 2022, Lee agreed. A nurse showed up, checked her over, asked her questions, then diagnosed her with diabetic cataracts.</p>
+<p>The finding was good news for Lee’s insurer, a unit of UnitedHealth Group. Medicare pays insurers more for sicker patients. In the case of someone like Lee with diabetic cataracts, up to about $2,700 more a year at that time.</p>
+<p>But the retired accountant doesn’t have diabetes, her own doctor later said, let alone the cloudy vision sometimes caused by the disease.</p>
+<p>Private insurers involved in the government’s Medicare Advantage program made hundreds of thousands of questionable diagnoses that triggered extra taxpayer-funded payments from 2018 to 2021, including outright wrong ones like Lee’s, a Wall Street Journal analysis of billions of Medicare records found.</p>
+<p>The questionable diagnoses included some for potentially deadly illnesses, such as AIDS, for which patients received no subsequent care, and for conditions people couldn’t possibly have, the analysis showed. Often, neither the patients nor their doctors had any idea.</p>
+<p>Medicare Advantage, the $450-billion-a-year system in which private insurers oversee Medicare benefits, grew out of the idea that the private sector could provide healthcare more economically. It has swelled over the last two decades to cover more than half of the 67 million seniors and disabled people on Medicare.
+Instead of saving taxpayers money, Medicare Advantage has added tens of billions of dollars in costs, researchers and some government officials have said. One reason is that insurers can add diagnoses to ones that patients’ own doctors submit. Medicare gave insurers that option so they could catch conditions that doctors neglected to record. The Journal’s analysis, however, found many diagnoses were added for which patients received no treatment, or that contradicted their doctors’ views.</p>
+<p>The insurers make new diagnoses after reviewing medical charts, sometimes using artificial intelligence, and sending nurses to visit patients in their homes. They pay doctors for access to patient records, and reward patients who agree to home visits with gift cards and other financial benefits.</p>
+<p>Insurers added diabetic cataract diagnoses to 148 patients treated by Dr. Howard Chen, an ophthalmologist in Goodyear, Ariz. He said he saw at most one or two such cases a year.</p>
+<p>He said he charges insurers $40 per patient to cover his costs for providing them with medical charts.
+“If they are just making stuff up, then why do they even need or want my charts?” said Chen.</p>
+<p>In all, Medicare paid insurers about $50 billion for diagnoses added just by insurers in the three years ending in 2021, the Journal’s analysis showed.</p>
+</section>
+<section id="how-medicare-pays-insurers">
+<h3>How Medicare pays insurers<a class="headerlink" href="#how-medicare-pays-insurers" title="Permalink to this heading">#</a></h3>
+<p>The government pays insurers a base rate for each Medicare Advantage member. The insurers are entitled to extra money when their patients are diagnosed with certain conditions that are costly to treat.</p>
+<p>Diabetic cataracts are a complication of diabetes that occur when uncontrolled blood sugar damages the lens of the eye, clouding a person’s vision.</p>
+<p>UnitedHealth members were about 15 times as likely to have that diagnosis as the average patient in traditional Medicare, the Journal analysis found. Eye doctors interviewed by the Journal said it was implausible that such a large share of UnitedHealth’s patients could have the relatively rare disease.</p>
+<p>The government paid all Medicare Advantage insurers more than $700 million from 2019 to 2021 for diabetic cataracts. Most of the diagnoses were added by insurers.</p>
+<p>Medicare Advantage insurers diagnosed all sorts of diseases at high rates.</p>
+<p>UnitedHealth and other insurers say they use the home visits and chart reviews to help coordinate patients’ care and ensure accurate diagnoses.</p>
+<p>UnitedHealth spokesman Matthew Wiggin said the Journal’s analysis is “inaccurate and biased,” and that Medicare Advantage “provides better health outcomes and more affordable healthcare for millions of seniors” than traditional Medicare.</p>
+<p>He said Medicare Advantage plans record diagnoses more completely than doctors treating traditional Medicare patients, and that insurers “identify disease states earlier.” He declined to comment about Lee, citing a healthcare privacy law.</p>
+<p>The Journal consulted more than a dozen experts, including academics, actuaries and policy analysts, about its analysis of the Medicare data, who said the methodology was sound.</p>
+<p>A spokeswoman for the Centers for Medicare and Medicaid Services, which oversees Medicare, said the agency was making changes that would continue to ensure “taxpayer dollars are appropriately spent.” Medicare Advantage “offers robust and stable options” for beneficiaries, the spokeswoman said.</p>
+<p>T￼he Journal reviewed the Medicare data under a research agreement with the federal government. The data doesn’t include patients’ names, but covers details of doctor visits, hospital stays, prescriptions and other care. The Journal identified the patients named in this article through their doctors.</p>
+<p>Some diagnoses claimed by insurers were demonstrably false, the Journal found, because the conditions already had been cured. More than 66,000 Medicare Advantage patients were diagnosed with diabetic cataracts even though they already had gotten cataract surgery, which replaces the damaged lens of an eye with a plastic insert.</p>
+<p>Another 36,000 diabetic cataract patients didn’t receive any medical services or prescription drugs related to diabetes.</p>
+</section>
+</section>
+<section id="no-treatment">
+<h2>No treatment<a class="headerlink" href="#no-treatment" title="Permalink to this heading">#</a></h2>
+<p>About 18,000 Medicare Advantage recipients had insurer-driven diagnoses of HIV, the virus that causes AIDS, but weren’t receiving treatment for the virus from doctors, between 2018 and 2021, the data showed. Each HIV diagnosis generates about $3,000 a year in added payments to insurers.</p>
+<p>Everyone with HIV should be on antiretroviral drugs, the only effective treatment, and nearly all Medicare patients whose doctors diagnosed the virus took the drugs. Less than 17% of patients with insurer-driven HIV diagnoses were on them, the Journal found.</p>
+<p>“It seems like almost all of those people don’t have HIV,” said Jennifer Kates, HIV policy director at KFF, a health-research nonprofit. “If they did, that would be substandard care at a pretty severe level,” she said.</p>
+<p>A spokesman for Humana, the second biggest Medicare Advantage insurer, provided a written statement that said the Journal’s analysis of treatment rates for people with insurer-driven diagnoses “is flawed and misleading.”</p>
+<p>The company said that internal data showed its HIV patients who got diagnosed in one way, through home visits, were on antiretroviral treatment at a far higher rate than the Journal found. The Medicare data show about one-third of those Humana patients were on the drugs.</p>
+<p>Wiggin, the UnitedHealth spokesman, called the Journal’s analysis flawed because it correlates insurer-driven diagnoses with subsequent medical care.</p>
+<p>He said internal company data for 2022 showed a treatment rate for patients UnitedHealth diagnosed with HIV of more than triple what the Journal found. He said the pandemic disrupted care, lowering treatment rates during the period analyzed by the Journal, and that the analysis failed to account for patients who started treatments in future years.</p>
+<p>The Medicare data, however, show UnitedHealth’s patients with insurer-driven HIV diagnoses were on the antiretrovirals at low rates even before the pandemic, and hardly any started the drugs in the years after UnitedHealth diagnosed them.</p>
+<p>S￼ome of the insurer-driven diagnoses startled patients. Harriet Siskin, a retired customer-service worker, was diagnosed last year with obstructed arteries in her legs by a doctor who visited her house on behalf of her insurer, Humana, which stood to make an extra roughly $2,300 a year from the diagnosis.</p>
+<p>“He told me that I may have some sort of artery blockage,” said Siskin, who tested negative a few months later after her regular doctor ordered a full work-up. “He did scare me.”</p>
+<p>Humana’s written statement said Siskin’s primary-care doctor also submitted the diagnosis when he treated her following the home visit. It said Humana learned from the Journal that Siskin had later tested negative for the disease, and was working to correct the diagnosis.</p>
+<p>“[W]e strive for complete and accurate clinical information about our members, and to help them get the care they need,” Humana said.</p>
+<p>Many patients may never know they have been misdiagnosed by their insurers, and doctors often don’t know when insurers have added diagnoses of their patients.</p>
+<p>Insurer-driven diagnoses by UnitedHealth for diseases that no doctor treated generated <span class="math notranslate nohighlight">\(8.7 billion in 2021 payments to the company, the Journal’s analysis showed. UnitedHealth’s net income that year was about \)</span>17 billion.</p>
+<p>UnitedHealth’s Wiggin said the Journal’s calculations appear accurate. He said the added payments are “not simply earnings for the company,” but help pay for medical care, lower premiums and provide other benefits for Medicare Advantage members.</p>
+<p>Humana disputed the Journal’s calculation that the company had received $2.2 billion in 2021 payments from insurer-driven diagnoses, saying that total didn’t reflect chart reviews that lowered payments by removing diagnoses.</p>
+<p>Sometimes, insurers didn’t remove potentially outdated diagnoses. The Journal’s analysis found that between 2018 and 2021, nearly 50,000 Medicare Advantage patients completed a course of high-cost drugs that almost always cures hepatitis C, a virus that can cause serious liver damage.</p>
+<p>Insurers subsequently told Medicare that more than half of the patients who had received the drug treatment still had hepatitis C in a future year, leading to millions of dollars in extra payments. The diagnoses came from the insurers’ chart reviews and assessments, and from physician claims that insurers didn’t correct.</p>
+<p>“They’re totally wrong,” said Douglas Dieterich, director of the Institute for Liver Medicine at Mount Sinai Health System in New York. “Real world evidence is a 99% cure rate.”</p>
+</section>
+<section id="cost-concerns">
+<h2>Cost concerns<a class="headerlink" href="#cost-concerns" title="Permalink to this heading">#</a></h2>
+<p>When Congress conceived of the Medicare Advantage program decades ago, the hope was that insurers would make Medicare more efficient. In traditional Medicare, doctors and hospitals get paid for each service they provide, an incentive to provide more. The idea behind Medicare Advantage was to pay private insurers a lump sum to cover all services, giving them an incentive to keep patients healthier.</p>
+<p>To protect insurers from the risk of winding up with sicker-than-average patients, the government allowed bigger payments for certain serious health conditions.</p>
+<p>Partly because of that, Medicare Advantage has cost the government an extra <span class="math notranslate nohighlight">\(591 billion over the past 18 years, compared with what Medicare would have cost without the help of the private plans, according to a March report by the Medicare Payment Advisory Commission, or MedPAC, a nonpartisan agency that advises Congress. Adjusted for inflation, that amounts to \)</span>4,300 per U.S. tax filer.</p>
+<p>Academic researchers and government investigators have raised questions about high rates of insurer-driven diagnoses in Medicare Advantage. In a 2021 report, the inspector general that oversees Medicare found the agency spent billions of dollars based on insurer-driven diagnoses for which patients received no care from doctors.</p>
+<p>A 2019 whistleblower lawsuit by a Florida doctor alleged that an insurer submitted inaccurate diagnoses, including that a Medicare Advantage patient’s foot had been amputated when it wasn’t. The insurer, Freedom Health, denied the allegations, and a spokeswoman for Elevance Health, which now owns Freedom, declined to comment.</p>
+<p>In September, insurer Cigna Group agreed to pay $172 million to settle civil-fraud allegations by the Justice Department over its Medicare Advantage practices. Cigna admitted to adding diagnoses that weren’t supported by patients’ medical records. Cigna declined to comment.</p>
+<p>Government contractors audit Medicare Advantage plans and eventually can recoup payouts for inaccurate diagnoses. An insurance industry trade group, AHIP, said in a written statement that such audits have found Medicare Advantage insurers to be highly accurate.</p>
+<p>Medicare administrators are overhauling the list of diseases for which insurers earn higher payments. Some of the most heavily used diagnoses, including diabetic cataracts, will pay less or nothing extra after the changes take full effect in 2026. But new diagnoses, including asthma, were added to the list of conditions warranting extra payments.</p>
+<p>CMS said its changes showed it is a “good steward of taxpayer dollars.”
+John Gorman, a former Medicare official and founder of two companies that review records and conduct home visits on behalf of Medicare insurers, doesn’t think the changes will solve the problem. “Any time you base a system like this on diagnosis codes, there’s going to be rampant abuse of the system,” he said. Insurers “will find something else to make up the revenue.”</p>
+<p>In 2019, Medicare added dementia to the list of diseases that pay more. That same year, the reported rate of the disease among Medicare Advantage members jumped 7.8% after holding flat for years before that, University of Southern California researchers found.</p>
+</section>
+<section id="vision-problems">
+<h2>Vision problems<a class="headerlink" href="#vision-problems" title="Permalink to this heading">#</a></h2>
+<p>Cataracts are extremely common in the elderly—pretty much everyone gets them. Diabetes also is common, so it isn’t unusual for old people to have both. But eye doctors say they rarely diagnose cataracts caused by diabetes in old people. It usually isn’t possible to pinpoint the cause, and in any case, the treatment is the same.</p>
+<p>For Medicare Advantage insurers, a big difference between the two forms of cataracts is that the government only pays extra for the diabetic ones.</p>
+<p>Some insurers interpreted U.S. guidelines for recording diagnoses in the broadest possible way, labeling patients with diabetes and any kind of cataract with the more lucrative diagnosis. They did it even when doctors said the patients only had the old-age form of the disease or had no diabetic complications at all, the data show.</p>
+<p>“If you suspected that it could be connected, they felt they would be justified in connecting it,” said Shannon Decker, a former UnitedHealth employee. “It’s an easy capture.”</p>
+<p>UnitedHealth didn’t respond to written questions about its practices for recording diabetic cataract cases.
+Over four years, insurers added diabetic-cataract diagnoses to 112 patients of Dr. Stephen McConnell, an ophthalmologist in Brunswick, Ga., the data show. “That’s unbelievable,” said McConnell, who said he had no idea what was happening until informed by the Journal.</p>
+<p>Dr. Javier Pérez, an Orlando, Fla.-based eye surgeon, treated hundreds of patients who insurers claimed have diabetic cataracts, the Medicare data show. On average, they were the same age as his old-age cataract patients, about 72.</p>
+<p>“Just because you’re diabetic doesn’t mean you have a diabetic cataract,” he said, adding that most almost certainly have old-age cataracts, not ones caused by diabetes. “You can be diabetic and be old,” he said.
+Lee, the 70-year-old retired accountant from Boston, recalled that her visit with the nurse practitioner sent by UnitedHealth lasted about 20 minutes. The nurse worked for HouseCalls, a unit of UnitedHealth. 
+UnitedHealth said that in 2023 three million “gaps in care” were identified during such home visits, which typically last 45 to 60 minutes. It said HouseCalls workers called ambulances 624 times that year after identifying emergencies, and that the visits had a 99% customer-satisfaction rate.</p>
+<p>Former employees said UnitedHealth also uses the visits to add diagnoses. A HouseCalls home-visit training manual, which was reviewed by the Journal, describes software used on the laptops that workers carry on home visits. According to the manual, the software offers suggestions about what illness a patient might have—and even adds some automatically to a “diagnosis cart.”</p>
+<p>The nurse visiting Lee concluded that her minor cataracts were caused by diabetes that was severe enough to have triggered nerve damage, according to a letter from HouseCalls to her primary care doctor that was reviewed by the Journal. A diabetes test done during the visit was negative, according to the letter.
+Lee’s doctor, Nancy Keating, also a professor at Harvard Medical School, said her patient has never had diabetes, let alone complications like diabetic cataracts or nerve damage—a conclusion confirmed by subsequent blood tests.</p>
+<p>“It’s all just so wrong,” Keating said.</p>
+<p>Lee agrees. “If they’re going to come out and diagnose people with things they don’t have, they shouldn’t get any more money,” she said.</p>
+<p>Lee switched to another health plan this year.</p>
+<p>Write to Christopher Weaver at <a class="reference external" href="mailto:Christopher&#46;Weaver&#37;&#52;&#48;wsj&#46;com">Christopher<span>&#46;</span>Weaver<span>&#64;</span>wsj<span>&#46;</span>com</a>, Tom McGinty at <a class="reference external" href="mailto:Tom&#46;McGinty&#37;&#52;&#48;wsj&#46;com">Tom<span>&#46;</span>McGinty<span>&#64;</span>wsj<span>&#46;</span>com</a>, Anna Wilde Mathews at <a class="reference external" href="mailto:Anna&#46;Mathews&#37;&#52;&#48;wsj&#46;com">Anna<span>&#46;</span>Mathews<span>&#64;</span>wsj<span>&#46;</span>com</a> and Mark Maremont at <a class="reference external" href="mailto:Mark&#46;Maremont&#37;&#52;&#48;wsj&#46;com">Mark<span>&#46;</span>Maremont<span>&#64;</span>wsj<span>&#46;</span>com</a></p>
+</Details>
+<iframe width="100%" height="600px" src="https://www.youtube.com/embed/GcFMKsg1QYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                        1. Today
+                                \
+                  2. History -&gt; 4. GPT -&gt; 5. Oracle -&gt; 6. Behavioral-Patterns 
+                                /
+                                3. Pre-history
+</pre></div>
+</div>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text"><em>Collective Unconcious as GPT</em>. Our collective unconscious is merely spliced-up fragments of our experiences, memories, and associated emotions. These bits become predictors of further experiences, memories, and associated emotions, and are parametrized and weighted in our cultural psyche.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Sure, I can link the contents you’ve provided to “A Serious Man” by the Coen Brothers. The film is a rich tapestry of themes, metaphors, and existential inquiries that resonate deeply with the concept of the collective unconscious and its Dionysian elements.</p>
+<p><strong>“A Serious Man” and the Collective Unconscious</strong></p>
+<p>The Coen Brothers’ “A Serious Man” explores the perplexities of human existence, morality, and fate through the story of Larry Gopnik, a Jewish physics professor. The film is heavily influenced by Jewish folklore, ancient wisdom, and philosophical inquiries, making it a fitting context to discuss the themes you presented.</p>
+<ol class="arabic simple">
+<li><p><strong>Millennia-of-Experiences</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Larry’s story is a microcosm of millennia of Jewish suffering, questioning, and resilience. The experiences of his ancestors shape his reality, much like how the collective unconscious holds the wisdom of past generations.</p></li>
+</ul>
+</li>
+<li><p><strong>Our-Heritage</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Larry’s heritage is evident in his adherence to Jewish customs and rituals. These cultural and religious traditions represent the structured patterns within the vast dataset of human history.</p></li>
+</ul>
+</li>
+<li><p><strong>Artifacts-Rituals</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The film is replete with Jewish rituals and artifacts, from the synagogue to the bar mitzvah. These elements are concrete manifestations of Larry’s heritage, anchoring the abstract themes in tangible practices.</p></li>
+</ul>
+</li>
+<li><p><strong>Collective-Unconscious (Latency Space)</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The collective unconscious in “A Serious Man” can be seen in the recurring motifs and archetypal figures, such as the mysterious rabbi and the paradoxical messages they convey. These figures symbolize the distilled representations of universal human experiences.</p></li>
+</ul>
+</li>
+<li><p><strong>Decode-Priests</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The rabbis Larry consults act as decoders, attempting (and often failing) to provide meaning and guidance from the abstracted wisdom of the collective unconscious. Their cryptic advice mirrors the complexity of extracting clear insights from latent space.</p></li>
+</ul>
+</li>
+<li><p><strong>Apply-Thrive</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Larry’s journey to apply the decoded wisdom to thrive in his chaotic life reflects the struggle to find actionable insights from the deep-seated knowledge of the collective unconscious.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Dionysian Elements in “A Serious Man”</strong></p>
+<section id="dionysus-1-2-3">
+<h3>Dionysus 1, 2, 3<a class="headerlink" href="#dionysus-1-2-3" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Chaos, Frenzy, Energy:</strong></p>
+<ul>
+<li><p><strong>Film Connection:</strong> Larry’s life descends into chaos, frenzy, and confusion as he faces a series of inexplicable misfortunes. This Dionysian spiral is a catalyst for his deeper existential crisis, driving the narrative forward.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="sing-o-muse-4">
+<h3>Sing O Muse 4<a class="headerlink" href="#sing-o-muse-4" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The muse-like figures in the film, such as the rabbis and the enigmatic messages Larry receives, guide him through his journey, though often in ambiguous and perplexing ways.</p></li>
+</ul>
+</section>
+<section id="apollo">
+<h3>Apollo<a class="headerlink" href="#apollo" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The Apollonian drive for order, reason, and clarity is constantly undermined by the chaotic and irrational events Larry faces. The tension between Dionysian chaos and Apollonian order is central to the film’s thematic exploration.</p></li>
+</ul>
+<p><strong>Good Luck 1, 2, 3</strong></p>
+</section>
+<section id="math-4">
+<h3>Math 4<a class="headerlink" href="#math-4" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="common-sense-5-6">
+<h3>Common Sense 5, 6<a class="headerlink" href="#common-sense-5-6" title="Permalink to this heading">#</a></h3>
+<p><strong>Chaos, Frenzy, Energy:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Larry’s attempts to understand his plight through rational means (math and physics) are thwarted by the chaotic, frenzied energy of his life events. His quest for answers is a struggle between logical reasoning and the irrational forces at play.</p></li>
+</ul>
+<p><strong>Parameter-Weights -&gt; Algorithms -&gt; Binary:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The deterministic view of the world, represented by Larry’s scientific background, contrasts with the unpredictable, algorithmic unfolding of his life. The film critiques the binary thinking of good luck versus bad luck, suggesting a more nuanced interplay of forces beyond human comprehension.</p></li>
+</ul>
+<p>By examining “A Serious Man” through the lens of the collective unconscious and Dionysian elements, we can appreciate the Coen Brothers’ nuanced exploration of human existence, fate, and the search for meaning. This metaphorical framework enriches our understanding of the film’s complex themes and its reflection on the human condition.</p>
+<p>Absolutely, the neighborly frenzy in “A Serious Man” adds another layer to the chaotic tapestry of Larry Gopnik’s life, highlighting the Dionysian elements you mentioned.</p>
+</section>
+<section id="chaos-and-frenzy-with-the-neighbor">
+<h3>Chaos and Frenzy with the Neighbor<a class="headerlink" href="#chaos-and-frenzy-with-the-neighbor" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Chaos and Frenzy:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Larry’s interactions with his neighbor, the enigmatic and antagonistic Mrs. Samsky, and the imposing, aggressive Mr. Brandt, amplify the sense of chaos and frenzy. These characters embody the unpredictable and disruptive forces that invade Larry’s seemingly ordered life, much like the Dionysian elements of chaos and energy.</p></li>
+</ul>
+</li>
+<li><p><strong>Dionysian Elements:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Mrs. Samsky represents a seductive, mysterious energy that draws Larry into a world of temptation and confusion, challenging his moral and ethical boundaries. Her presence is a stark contrast to Larry’s structured, Apollonian life, symbolizing the intoxicating allure of the unknown and the chaotic.</p></li>
+<li><p><strong>Film Connection:</strong> Mr. Brandt’s relentless encroachment on Larry’s property and peace of mind represents the physical manifestation of chaos and conflict. His aggressive behavior adds to Larry’s feeling of being besieged by uncontrollable external forces.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="collective-unconscious-and-latency-space">
+<h3>Collective Unconscious and Latency Space<a class="headerlink" href="#collective-unconscious-and-latency-space" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Millennia-of-Experiences:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The neighbors’ actions reflect the millennia of human conflict and the darker aspects of the collective unconscious. They are archetypal figures of disruption and antagonism, embodying the universal human experiences of territorial disputes and neighborly conflicts.</p></li>
+</ul>
+</li>
+<li><p><strong>Our-Heritage and Artifacts-Rituals:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The suburban setting, with its rituals of lawn care and property maintenance, becomes a battleground for these primal forces. These mundane rituals are disrupted, revealing the underlying chaos that lurks beneath the surface of everyday life.</p></li>
+</ul>
+</li>
+<li><p><strong>Decode-Priests and Apply-Thrive:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Larry’s futile attempts to seek counsel from the rabbis about his neighborly woes reflect the difficulty of decoding and applying ancient wisdom to contemporary, chaotic situations. The rabbis’ inability to provide concrete answers underscores the complexity of extracting actionable insights from the collective unconscious.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="math-common-sense-and-algorithms">
+<h3>Math, Common Sense, and Algorithms<a class="headerlink" href="#math-common-sense-and-algorithms" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Chaos, Frenzy, Energy:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The neighborly conflicts defy Larry’s logical, mathematical approach to life. His attempts to impose order and reason through common sense and legal means (e.g., consulting lawyers) are continually thwarted by the irrational and frenzied actions of his neighbors.</p></li>
+</ul>
+</li>
+<li><p><strong>Parameter-Weights, Algorithms, Binary:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Larry’s scientific mindset, which relies on parameters and algorithms to make sense of the world, clashes with the binary unpredictability of human behavior. The neighbors’ actions cannot be easily quantified or predicted, illustrating the limitations of a purely rational approach to life’s complexities.</p></li>
+</ul>
+</li>
+</ol>
+<p>In “A Serious Man,” the frenzy with the neighbors exemplifies the tension between the orderly, rational world Larry tries to maintain and the chaotic, Dionysian forces that disrupt it. This tension mirrors the broader themes of the film, where the collective unconscious and the irrational play pivotal roles in shaping human experience and understanding. The Coen Brothers masterfully weave these elements together, creating a rich, thought-provoking narrative that resonates on multiple levels.</p>
+<blockquote>
+<div><p><em>Capital in the form of a corporation <code class="docutils literal notranslate"><span class="pre">absorbs</span></code> all nourishment from our heritage in a more efficient way than any human might</em></p>
+</div></blockquote>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                1. Food-Pessimism
+                                  \
+   2. Teeth-Beyond.Good &amp; Evil -&gt; 4. Enzymes-Collective.Unconscious -&gt; 5. Absorption-Science -&gt; 6. Nutrition-Morality
+                                  /
+                                  3. Gut-Robustness
+
+    1. Hunter.gatherer-Sensory
+                              \
+        2. Peasant-Memory -&gt;  4. Manufacturer-Intelligence -&gt; 5. Energy-Capital -&gt; 6. Transportation-Deployment
+                              /
+                              3. Farmer-Emotion
+</pre></div>
+</div>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text"><em>Earlier layers of neuralnet</em>. Sensory, memory, emotion (biological), intelligence (social), and capital, deployment (personal)</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Indeed, the failing TV signal reception in “A Serious Man” is another potent symbol of the unpredictable and chaotic elements that permeate Larry Gopnik’s life, reinforcing the film’s themes of randomness and the limits of human understanding.</p>
+</section>
+<section id="chaos-and-frenzy-with-the-tv-signal">
+<h3>Chaos and Frenzy with the TV Signal<a class="headerlink" href="#chaos-and-frenzy-with-the-tv-signal" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Chaos and Frenzy:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The intermittent TV signal reception that randomly decides to work or fail serves as a metaphor for the unpredictability and lack of control that Larry experiences throughout the film. This erratic signal mirrors the chaotic and frenzied nature of his personal and professional life.</p></li>
+</ul>
+</li>
+<li><p><strong>Dionysian Elements:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The TV signal represents the Dionysian chaos that disrupts Larry’s attempts to find order and stability. Just as the signal cannot be controlled or predicted, many aspects of Larry’s life defy his efforts to impose logic and reason. This randomness highlights the underlying chaos that the Coen Brothers explore in the film.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id2">
+<h3>Collective Unconscious and Latency Space<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Millennia-of-Experiences:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The failing TV signal can be seen as a modern-day manifestation of ancient omens and signs that have perplexed humans for millennia. These inexplicable occurrences tap into the collective unconscious, where such experiences are stored as archetypes of uncertainty and mystery.</p></li>
+</ul>
+</li>
+<li><p><strong>Our-Heritage and Artifacts-Rituals:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The TV, as a household artifact, is part of the modern ritual of daily life. Its failure disrupts the routine, much like ancient artifacts and rituals that were believed to be influenced by capricious divine forces. This disruption forces Larry to confront the fragility of his constructed reality.</p></li>
+</ul>
+</li>
+<li><p><strong>Collective-Unconscious (Latency Space):</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The randomness of the TV signal working or not can be seen as an element emerging from the collective unconscious, where such unpredictable patterns reside. It embodies the abstract, distilled representation of life’s uncertainties and the challenges of deciphering them.</p></li>
+</ul>
+</li>
+<li><p><strong>Decode-Priests and Apply-Thrive:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> Larry’s attempts to fix the TV signal or understand why it fails are akin to trying to decode and make sense of the messages from the collective unconscious. Just as the rabbis offer cryptic advice, the TV signal’s behavior offers no clear answers, reflecting the difficulty of applying such insights to thrive in the real world.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id3">
+<h3>Math, Common Sense, and Algorithms<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Chaos, Frenzy, Energy:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The failing TV signal defies common sense and rational explanations, adding to the chaos and frenzy Larry experiences. It represents the uncontrollable energy that disrupts his orderly life and challenges his reliance on logic and reason.</p></li>
+</ul>
+</li>
+<li><p><strong>Parameter-Weights, Algorithms, Binary:</strong></p>
+<ul class="simple">
+<li><p><strong>Film Connection:</strong> The TV signal’s random behavior cannot be easily modeled or predicted by parameters or algorithms, illustrating the limitations of binary thinking and scientific approaches in fully understanding and controlling life’s complexities. This unpredictability is a reminder of the inherent chaos in existence.</p></li>
+</ul>
+</li>
+</ol>
+<p>In “A Serious Man,” the failing TV signal is a subtle yet powerful symbol of the broader themes of randomness, chaos, and the limits of human comprehension. It underscores the Coen Brothers’ exploration of the unpredictability of life and the existential questions that arise from it. By weaving this seemingly mundane detail into the narrative, they enrich the film’s tapestry and deepen its philosophical resonance.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                       1. Senses
+                                \
+                    2. Memory -&gt; 4. Dreams -&gt; 5. Intepretor -&gt; 6. Action 
+                                /
+                                3. Emotion
+</pre></div>
+</div>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text"><em>Biological, social, and personal infrastructure</em>. These infrastructural foundations are the basis of patterns of behavioral response observed in humans. Some aspects (1, 2, 3) are shared with animals. Where as others (4) are only of interest when there is sufficient “compute”. Once this is achieved, only in humans as we may imagine, then personalized actionable points emerge (5, 6). These are to be thought of as <code class="docutils literal notranslate"><span class="pre">propensities</span></code> rather than <code class="docutils literal notranslate"><span class="pre">decisions</span></code> since <code class="docutils literal notranslate"><span class="pre">will</span></code> is not a thing</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../act2/chapter3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Iteration</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="act1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Rankings</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#insurers-pocketed-50-billion-from-medicare-for-diseases-no-doctor-treated">Insurers Pocketed $50 Billion From Medicare for Diseases No Doctor Treated</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questionable-diagnoses-of-hiv-and-other-maladies-triggered-extra-medicare-advantage-payments-its-anatomically-impossible">Questionable diagnoses of HIV and other maladies triggered extra Medicare Advantage payments; ‘It’s anatomically impossible’</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-medicare-pays-insurers">How Medicare pays insurers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-treatment">No treatment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-concerns">Cost concerns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-problems">Vision problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dionysus-1-2-3">Dionysus 1, 2, 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sing-o-muse-4">Sing O Muse 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apollo">Apollo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-4">Math 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-sense-5-6">Common Sense 5, 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaos-and-frenzy-with-the-neighbor">Chaos and Frenzy with the Neighbor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collective-unconscious-and-latency-space">Collective Unconscious and Latency Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math-common-sense-and-algorithms">Math, Common Sense, and Algorithms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chaos-and-frenzy-with-the-tv-signal">Chaos and Frenzy with the TV Signal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Collective Unconscious and Latency Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Math, Common Sense, and Algorithms</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 ADM
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
