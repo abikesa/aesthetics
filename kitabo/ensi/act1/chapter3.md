@@ -1,52 +1,39 @@
 (act1-frail)=
 # Frailty
 
-Your approach to literary criticism through the lens of survival analysis is both innovative and compelling. It bridges the gap between the empirical and the creative, offering a structured methodology to evaluate narrative elements.
+                  1. f(t)
+                        \
+             2. S(t) -> 4. y:h'(f)=0; t(X'X)X'Y -> 5. b -> 6. SV'
+                        /
+                        3. h(t)
 
-Here's a refined version of your outline:
 
----
+## Never Same River Twice 1, 2, 3
+- Chaos: Time-to-event (grief, love) {cite}`heraclitus_fragments`
+- Frenzy: No broken vow to duty or calling
+- Emotion: Instantaneous likelihood of breaking oath
 
-# Literary Criticism through Survival Analysis
+## Categorical Imperative 4
+- Dionysian: stories: arcs (n) x values: honor-duty $(p)$ design matrix {cite}`johnson_kant_moral` {cite}`timesofisrael2024kamala`
 
-## Aim 1
+## Beyond Good & Evil 5, 6
+- Algorithm defining `weights`, values & priorities in relation to our fate and `destiny` {cite}`economist2024kamala` {cite}`economist2024zuckerberg` {cite}`youtube2024bc6uFV9CJGg` {cite}`lambdalabs_gpu_cloud`
+- Binary: if an archetype is theme, you are one of the unique variations; no two people are identical {cite}`nietzsche_beyond_good_evil`
 
-### Biology
-- **$f(t)$** (Probability Density Function)
-  - Focus on incompletely observed processes.
-    - Exclude fantasy events that deviate more than $3\sigma$ from the mean (`shock-value` events).
-    - Only include universally observable events.
-    - Include private hallucinations like Hamlet's ghost, provided they lack agency and only influence the delusional individual's actions.
-  - Use a nonparametric approach to the survival function $S(t)$, avoiding $1 - F(t)$.
-- **$S(t)$** (Survival Function)
-  - $P(T>t)$, representing the probability of survival past time $t$.
-- **$h(t)$** (Hazard Function)
-  - Encodes the entire risk profile.
-  - $h(t)=\lambda=\frac{f(t)}{S(t)}$, representing the instantaneous risk at time $t$.
+              1. Failure
+                        \
+             2. Duty -> 4. Outcome:Turning-Points;Collective -> 5. Weights -> 6. Precision-Relevance
+                        /
+                        3. Landscape
 
-### Collective
-- **$X$**
-  - Represents various patterns of behavior known to humanity since the beginning of time.
-  - These factors influence the `time-to-event` of processes.
-  - Agency is expressed by altering the values (alleles) of these factors (genetic loci).
+```{margin}
+<Details>
+   <Summary>Note</Summary>
+The phrase "never in the same river twice" refers to Heraclitus' idea of `flux` or `chaos` as foundational: that change is constant, and nothing remains the same. Every moment is unique, and the river you step into today is not the same river you stepped into yesterday because both you and the river have changed.
 
-### Decisions
-- **$\beta$** (Parameter Vector)
-  - Represents all the parameters or `gene loci`.
-- **$SV'$** (Scenario Vector)
-  - Think of these as `allelic variants`.
-  - Binary choices, decisions, and propensities.
-  - These affect the time-to-event and are decoded by the scenario vector.
+The "categorical imperative," a concept developed by Immanuel Kant, dictates that one should act only according to maxims that one would want to become universal laws. It emphasizes the importance of moral duty and the principle of universality in ethical decision-making.
 
----
+"Beyond Good and Evil," a work by Friedrich Nietzsche, challenges traditional notions of morality. Nietzsche criticizes the dichotomy of good versus evil and advocates for a reevaluation of values, encouraging the creation of one's own values and moral framework, transcending societal norms.
 
-### Application to "Entourage"
-- The show "Entourage" can be critiqued using this framework, where its recurring fantastical elements represent deviations from the general human experience, akin to events far outside the normal probability density function ($>3\sigma$ events).
-- These fantastical elements, while entertaining, distort the realistic portrayal of life, similar to how high variance events ($>3\sigma$) are excluded from certain biological models.
-
-### Comparison to "Game of Thrones"
-- "Game of Thrones" presents characters like Night Walkers, giants, and dragons—elements far beyond the $3\sigma$ threshold. These fantastical elements challenge the rational human experience, offering a stark contrast to the narrative structure of "Entourage."
-
----
-
-This structured approach allows for a nuanced critique of narrative elements, providing a clear framework to evaluate the realism and frequency of fantastical events within any literary work or show. By applying principles of survival analysis, you offer a fresh perspective on storytelling that emphasizes both the empirical and the imaginative aspects of narratives.
+These concepts represent distinct philosophical approaches to understanding life, ethics, and change. Heraclitus highlights the flux and impermanence of existence, Kant focuses on a rigid, rational framework for morality, and Nietzsche provocatively calls for the creation of individual values beyond traditional moral constraints. Combining these perspectives can lead to a nuanced view that acknowledges the fluidity of life, the necessity of ethical principles, and the power of personal value creation.
+</Details>

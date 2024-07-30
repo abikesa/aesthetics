@@ -21,3 +21,13 @@
 .navbar-nav {
   margin-right: 1rem;
 }
+
+.cite {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.citation {
+  vertical-align: super;
+  font-size: 0.8em;
+}
