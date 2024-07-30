@@ -1,0 +1,790 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Chopin &#8212; Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/book-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ipynb/chopin';</script>
+    <script src="../_static/script.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://github.com/jhufena/jhufena.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-light" alt="Template - Home"/>
+    <script>document.write(`<img src="https://github.com/jhufena/jhufena.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-dark" alt="Template - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act1/part1.html">Aim 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Mortality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">ESRD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Frailty</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act2/part2.html">Aim 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter1.html">Hospitalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter2.html">Length of Stay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act2/chapter3.html">Outcomes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act3/part3.html">Aim 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act1.html">WebApp</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_1.html">Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_2.html">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_3.html">Annotation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act2.html">Deployment</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_1.html">GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_2.html">4.2</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_3.html">4.3</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act3.html">Iteration</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_1.html">Latest Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_2.html">Bayesian Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_3.html">Missingness and A Priori</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/ipynb/chopin.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ipynb/chopin.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chopin</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-departure-1-2-3"><code class="docutils literal notranslate"><span class="pre">ii</span></code>: Departure 1, 2, 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-struggle-4"><code class="docutils literal notranslate"><span class="pre">V</span></code>: Struggle 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-return-5-6"><code class="docutils literal notranslate"><span class="pre">I</span></code>: Return 5, 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activation-function-q">Activation Function <span class="math notranslate nohighlight">\(Q\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biases-u">Biases <span class="math notranslate nohighlight">\(U()\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-frac-du-dq">Weights <span class="math notranslate nohighlight">\(\frac{dU()}{dQ}\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bellissimo">Bellissimo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-op-28-prelude-no-4-wikipedia-prelude-op-28-no-4">Case-study: Op 28 Prelude No. 4 <span class="xref cite">wikipedia_prelude_op_28_no_4</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-i-relative-iii">A: i relative/III</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-im7">B: Im7</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a2-i-relative-iii-v-deletion-other-deletions">A2:  i relative/III (V deletion &amp; other deletions)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b2-im7-shortest-agitato">B2:  im7 (shortest, agitato)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coda-i-minmaj7-9">Coda i minMaj7 (9)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-utility">Marginal-utility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parts-unknown">Parts Unknown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dorian-gray-mode">Dorian Gray Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#certainty-vs-ambiguity">Certainty vs. Ambiguity</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chopin">
+<span id="id1"></span><h1>Chopin<a class="headerlink" href="#chopin" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p><em>From the point of view of form, the <code class="docutils literal notranslate"><span class="pre">arche</span></code>type of all the arts is the art of the musician - Oscar Wilde</em></p>
+</div></blockquote>
+<p>Missingness of one or all of the principle components of data, code, server, models, weights, and profiles is what is at stake (but perhaps migration represents redefining home?):</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(t)\)</span> I</p></li>
+<li><p><span class="math notranslate nohighlight">\(S(t)\)</span> ii-V-I</p></li>
+<li><p><span class="math notranslate nohighlight">\(h(t)\)</span> iii, IV, vi, vii, alterations: <code class="docutils literal notranslate"><span class="pre">being</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">moment</span></code> trumps the <code class="docutils literal notranslate"><span class="pre">ii-V7-I</span></code> duty <span id="id2"><sup></sup></span></p>
+<ul>
+<li><p>Δ7</p></li>
+<li><p>m or min</p></li>
+<li><p>° or dim</p></li>
+<li><p>ø or m7♭5, -5</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span></code> or aug, ♯5 or +5</p></li>
+<li><p>sus</p></li>
+<li><p>♭9, ♯9, ♯11, ♭13</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\((X'X)^T \cdot X'Y\)</span> tension &amp; release (e.g. Aiim7/E (GΔ) - iim7♭5/E Em)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> m7♭5 &gt; 7♯9 &gt; 7♭9 &gt; °7 &gt; 7, etc</p></li>
+<li><p><span class="math notranslate nohighlight">\(SV'\)</span> BWV 846 Prelude in C Major,  Op 28 Prelude No. 4</p></li>
+</ul>
+<p>While Tyler Perry’s work captures the collective unconscious via tension (bad marriage) &amp; release (church music), the characters he creates don’t have individually compelling arcs that subsume many of the parameters of life</p>
+<p>This is equivalent to their <span class="math notranslate nohighlight">\(SV'\)</span> being a vector of mostly <span class="math notranslate nohighlight">\(zeros\)</span> and the barriers, challenges, diversions, sirens, misfortunes, obstacles, courses, “chains” within which Tyler Perry is supposed to “dance” aren’t rich, leaving a basic ii-V-I redemption arch with perhaps one or two straightforward insersions of, say, iii and IV.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>      1. f(t)
+            \
+ 2. S(t) -&gt; 4. y:h&#39;(t)=0;t(X&#39;X)X&#39;Y -&gt; 5. b -&gt; 6. SV&#39;
+            /
+            3. h(t)
+</pre></div>
+</div>
+<section id="ii-departure-1-2-3">
+<h2><code class="docutils literal notranslate"><span class="pre">ii</span></code>: Departure 1, 2, 3<a class="headerlink" href="#ii-departure-1-2-3" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Sensory acuity <span id="id3"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id4" title="Anthony Bourdain. Why the french don't suck. 2005. Travel Channel. URL: https://watch.travelchannel.com/video/anthony-bourdain-no-reservations-travel-channel/why-the-french-dont-suck-s1e4.">28</a></sup></span>: vision, hearing, smell, balance, glucose</p></li>
+<li><p>Memory &amp; cognitive: integrity, decline, tests</p></li>
+<li><p>Physical activty: sarcopenia, brisk, dynamometer</p></li>
+</ul>
+</section>
+<section id="v-struggle-4">
+<h2><code class="docutils literal notranslate"><span class="pre">V</span></code>: Struggle 4<a class="headerlink" href="#v-struggle-4" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Frailty: loneliness, isolation, usefulness</p></li>
+</ul>
+</section>
+<section id="i-return-5-6">
+<h2><code class="docutils literal notranslate"><span class="pre">I</span></code>: Return 5, 6<a class="headerlink" href="#i-return-5-6" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Independence: ADLs, IADL</p></li>
+<li><p>Hard-outcomes: shuffling, reflexes, falls, hospitalization, organ-failure, death</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In John Adams letter to Abigail concerning the “three generation” process of making an artist or seeker of leisure, we can reconceptualize it as a ii-V7-I chord progression.</p>
+<p>One ancestor departs from the homeland and finds manual work (garbage collection for Kardashians). Their struggles in a new adoptive home yield a triumph: a professional second generation (trial lawyer for Kardashians).</p>
+<p>The final generation has seen no struggle and the family has “returned” to the idealized paradise they would have wanted at their original home but found elsewhere. It’s in this light that you should read the letter to Abigail <span id="id4"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id6" title="John Adams. Letter from john adams to abigail adams. Massachusetts Historical Society Digital Collection, May 1780. Accessed [Insert Access Date]. URL: https://www.masshist.org/digitaladams/archive/doc?id=L17800512jasecond.">29</a></sup></span></p>
+</div>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<blockquote>
+<div><p><em><a class="reference external" href="https://www.masshist.org/digitaladams/archive/doc?id=L17800512jasecond">Letters to Abigail</a></em></p>
+</div></blockquote>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                         1. Pessimism
+                                     \
+            2. Beyond Good &amp; Evil -&gt; 4. Dionysian -&gt; 5. Science -&gt; 6. Morality
+                                     /
+                                     3. Robustness
+</pre></div>
+</div>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg" /></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                             1. Chaos
+                                     \
+                        2. Frenzy -&gt; 4. Dionysian -&gt; 5. Algorithm -&gt; 6. Binary
+                                     /
+                                     3. Energy
+</pre></div>
+</div>
+</section>
+<section id="activation-function-q">
+<h2>Activation Function <span class="math notranslate nohighlight">\(Q\)</span><a class="headerlink" href="#activation-function-q" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Hunter-gatherer/<code class="docutils literal notranslate"><span class="pre">War</span></code>: <a class="reference external" href="https://www.uuftc.org">humanism</a>, spiritual teachings  (I)</p></li>
+<li><p>Peasant/<code class="docutils literal notranslate"><span class="pre">Economics</span></code>: judeo (B)</p></li>
+<li><p>Farmer/<code class="docutils literal notranslate"><span class="pre">Calculus</span></code>: christian (G)</p></li>
+</ul>
+</section>
+<section id="biases-u">
+<h2><a class="reference external" href="https://www.youtube.com/watch?v=lAcYahc74o8">Biases</a> <span class="math notranslate nohighlight">\(U()\)</span><a class="headerlink" href="#biases-u" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Manufacturer/<code class="docutils literal notranslate"><span class="pre">Philosophy</span></code>: world religions (Y)</p></li>
+</ul>
+</section>
+<section id="weights-frac-du-dq">
+<h2>Weights <span class="math notranslate nohighlight">\(\frac{dU()}{dQ}\)</span><a class="headerlink" href="#weights-frac-du-dq" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Energy/<code class="docutils literal notranslate"><span class="pre">Musick</span></code>: prophetic utterances (<a class="reference external" href="https://www.youtube.com/watch?v=1aM1KYvl4Dw">O</a>)</p></li>
+<li><p>Deployment/<code class="docutils literal notranslate"><span class="pre">Leisure</span></code>: individual experience (<a class="reference external" href="https://www.youtube.com/watch?v=fu-3WN9TJNI">R</a>)</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Define the total utility function U(Q)</span>
+<span class="k">def</span> <span class="nf">total_utility</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">Q</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Logarithmic utility function for illustration</span>
+
+<span class="c1"># Define the marginal utility function MU(Q)</span>
+<span class="k">def</span> <span class="nf">marginal_utility</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">100</span> <span class="o">/</span> <span class="p">(</span><span class="n">Q</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Derivative of the total utility function</span>
+
+<span class="c1"># Generate data</span>
+<span class="n">Q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>  <span class="c1"># Quantity range from 1 to 100</span>
+<span class="n">U</span> <span class="o">=</span> <span class="n">total_utility</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+<span class="n">MU</span> <span class="o">=</span> <span class="n">marginal_utility</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+
+<span class="c1"># Plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+
+<span class="c1"># Plot Total Utility</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Total Utility $U(Q) = 100 \log(Q + 1)$&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Total Utility&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Quantity (Q)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Total Utility (U)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Plot Marginal Utility</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span> <span class="n">MU</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Marginal Utility $MU(Q) = \frac{dU(Q)}</span><span class="si">{dQ}</span><span class="s1"> = \frac</span><span class="si">{100}</span><span class="s1">{Q + 1}$&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Marginal Utility&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Quantity (Q)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Marginal Utility (MU)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Adding some calculus notation and Greek symbols</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$MU(Q) = \frac{dU(Q)}</span><span class="si">{dQ}</span><span class="s2"> = \lim_{\Delta Q \to 0} \frac{U(Q + \Delta Q) - U(Q)}{\Delta Q}$&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/afa91f0bcf337e9d0a0901707fe1aa1c7a332b551fb5b7af920037b2996fc9ee.png" src="../_images/afa91f0bcf337e9d0a0901707fe1aa1c7a332b551fb5b7af920037b2996fc9ee.png" />
+</div>
+</div>
+<blockquote>
+<div><p>One needs challenges, a worthy adversary, the embrace of more remote overtones of the harmonic series - <em>Qualities</em> to be reinterpreted as the form of the character arc: the <code class="docutils literal notranslate"><span class="pre">ii-V7-I</span></code> archetype that music lends to all the arts</p>
+</div></blockquote>
+</section>
+<section id="bellissimo">
+<h2>Bellissimo<a class="headerlink" href="#bellissimo" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>The beauty here lies in the familiar <code class="docutils literal notranslate"><span class="pre">ii-V7-i</span></code> eternally recurrying, but with increasingly tantalizing transformations (<code class="docutils literal notranslate"><span class="pre">insertions</span></code> to delay premature home coming &amp;, <code class="docutils literal notranslate"><span class="pre">deletions</span></code> to avoid redundancy in repetition). The thematic coherence of the insertions is perhaps the most charming thing here: they are almost invariably <code class="docutils literal notranslate"><span class="pre">ii-V7-i</span></code> but drawn by the inimitable Pole from other modes (Phygian &amp; Ionian), qualities (maj, min, dom, dim, 7, 9, 11, 13 &amp; their extensions), and relatives (Ionian-Aeolian)</p>
+</div></blockquote>
+<section id="case-study-op-28-prelude-no-4-wikipedia-prelude-op-28-no-4">
+<h3>Case-study: Op 28 Prelude No. 4 <span id="id5"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id15" title="Wikipedia contributors. Prelude, op. 28, no. 4 (chopin). 2024. Accessed: 2024-07-28. URL: https://en.wikipedia.org/wiki/Prelude,_Op._28,_No._4_(Chopin).">30</a></sup></span><a class="headerlink" href="#case-study-op-28-prelude-no-4-wikipedia-prelude-op-28-no-4" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Em (Aelian mode)</p></li>
+<li><p>Largo common time</p></li>
+<li><p>ii-(V7sus, dom, b9, #9, b13)-i</p></li>
+<li><p>Interruptions of above odyssey (Mode, Quality, Relative):</p></li>
+</ul>
+<section id="a-i-relative-iii">
+<h4>A: i relative/III<a class="headerlink" href="#a-i-relative-iii" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Phrygian II7, 6th, dim</p></li>
+<li><p>I7</p></li>
+</ul>
+</section>
+<section id="b-im7">
+<h4>B: Im7<a class="headerlink" href="#b-im7" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>idim7, iim7 relative Maj/i, ii/i</p></li>
+<li><p>V7 relative Maj</p></li>
+<li><p>v7 relative Maj</p></li>
+<li><p>vdim relative</p></li>
+<li><p>im7/IV</p></li>
+</ul>
+</section>
+<section id="a2-i-relative-iii-v-deletion-other-deletions">
+<h4>A2:  i relative/III (V deletion &amp; other deletions)<a class="headerlink" href="#a2-i-relative-iii-v-deletion-other-deletions" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Phrygian ii7, iim7b5, iidim7</p></li>
+<li><p>I7</p></li>
+</ul>
+</section>
+<section id="b2-im7-shortest-agitato">
+<h4>B2:  im7 (shortest, agitato)<a class="headerlink" href="#b2-im7-shortest-agitato" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>idim7</p></li>
+</ul>
+</section>
+<section id="coda-i-minmaj7-9">
+<h4>Coda i minMaj7 (9)<a class="headerlink" href="#coda-i-minmaj7-9" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>ii relative</p></li>
+<li><p>Vb9 Maj7</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="marginal-utility">
+<h2>Marginal-utility<a class="headerlink" href="#marginal-utility" title="Permalink to this heading">#</a></h2>
+<p>By offering a gradually increasing challenge-level to the listener, the audience remains very engaged and ultimately invited to hit “replay” or “loop”  because the human mind is attracted to challenges we believe we can match if given the right amount oftime and tools with which to work.</p>
+<p>Anthony Bourdain spent 28 years in New York kitchens. Now, that is a “ii” chord – away from our idealized “home”, which is invariably a tropical beach with a nearby garden with vines, grapes, wine, cheese, and friends. Over those three decades he decoded the essence of his craft in the 2000 bestseller “Kitchen Confidential: Adventures in the Culinary Underbelly” (later inspiring the Typhoid Mary fantasy), which really are all the “insertions” borrowed from ii-V7-I of other modes, qualities, and relatives, culminating in a most severe <code class="docutils literal notranslate"><span class="pre">V7</span></code> tension that the only way out is “out of the kitche”.</p>
+<p>Indeed, his next eighteen years, also the rest of his life, were lived outside the kitchen:<span id="id6"><sup><a class="reference internal" href="../act3/part3/part3_3.html#id2" title="Wikipedia contributors. Anthony bourdain. 2024. Accessed: 2024-07-30. URL: https://en.wikipedia.org/wiki/Anthony_Bourdain#Television.">31</a></sup></span>  A Cook’s Tour (2002–2003), No Reservations (2005–2012), The Layover (2011–2013), and Parts Unknown (2013–2018). This literally involved the ii-V7-I chord sequence, where <code class="docutils literal notranslate"><span class="pre">ii</span></code> represents work and all the preparation with his team, <code class="docutils literal notranslate"><span class="pre">V7</span></code> is the foreign trip and filming, <code class="docutils literal notranslate"><span class="pre">I</span></code> is returning to New York to spend some time with his daughter (or travelling to Italy to spent time with his girl friend) before heading back to work for the next session. Whether the different countries, personalities, and cuisines represents sufficiently new challenges is questionable. Diminishing marginal utility set in and this ultimate antidote to life couldn’t suffice anymore after 18 years of the same “ii-V7-I”, not at all a paradise (i.e., an ultimate <code class="docutils literal notranslate"><span class="pre">I</span></code> destination)</p>
+<blockquote>
+<div><p>Ah, Dorian, how happy you are! What an exquisite life you have had! You have drunk deeply of everything. You have crushed the grapes against your palate. Nothing has been hidden from you. And it has all been to you no more than <code class="docutils literal notranslate"><span class="pre">the</span> <span class="pre">sound</span> <span class="pre">of</span> <span class="pre">music</span></code>.</p>
+</div></blockquote>
+</section>
+<section id="parts-unknown">
+<h2>Parts Unknown<a class="headerlink" href="#parts-unknown" title="Permalink to this heading">#</a></h2>
+<p>At another time he devoted himself entirely to music, and in a long latticed room, with a vermilion-and-gold ceiling and walls of olive-green lacquer, he used to give curious concerts in which mad gipsies tore wild music from little zithers, or grave, yellow-shawled Tunisians plucked at the strained strings of monstrous lutes, while grinning Negroes beat monotonously upon copper drums and, crouching upon scarlet mats, slim turbaned Indians blew through long pipes of reed or brass and charmed—or feigned to charm—great hooded snakes and horrible horned adders. The harsh intervals and shrill discords of barbaric music stirred him at times when Schubert’s grace, and <code class="docutils literal notranslate"><span class="pre">Chopin’s</span> <span class="pre">beautiful</span> <span class="pre">sorrows</span></code>, and the mighty harmonies of Beethoven himself, fell unheeded on his ear. He collected together from all parts of the world the strangest instruments that could be found, either in the tombs of dead nations or among the few savage tribes that have survived contact with Western civilizations, and loved to touch and try them. He had the mysterious juruparis of the Rio Negro Indians, that women are not allowed to look at and that even youths may not see till they have been subjected to fasting and scourging, and the earthen jars of the Peruvians that have the shrill cries of birds, and flutes of human bones such as Alfonso de Ovalle heard in Chile, and the sonorous green jaspers that are found near Cuzco and give forth a note of singular sweetness. He had painted gourds filled with pebbles that rattled when they were shaken; the long clarin of the Mexicans, into which the performer does not blow, but through which he inhales the air; the harsh ture of the Amazon tribes, that is sounded by the sentinels who sit all day long in high trees, and can be heard, it is said, at a distance of three leagues; the teponaztli, that has two vibrating tongues of wood and is beaten with sticks that are smeared with an elastic gum obtained from the milky juice of plants; the yotl-bells of the Aztecs, that are hung in clusters like grapes; and a huge cylindrical drum, covered with the skins of great serpents, like the one that Bernal Diaz saw when he went with Cortes into the Mexican temple, and of whose doleful sound he has left us so vivid a description. The fantastic character of these instruments fascinated him, and he felt a curious delight in the thought that art, like Nature, has her monsters, things of bestial shape and with hideous voices. Yet, after some time, he wearied of them, and would sit in his box at the opera, either alone or with Lord Henry, listening in rapt pleasure to “Tannhauser” and seeing in the prelude to that great work of art a presentation of the tragedy of his own soul.</p>
+</section>
+<section id="dorian-gray-mode">
+<h2>Dorian Gray Mode<a class="headerlink" href="#dorian-gray-mode" title="Permalink to this heading">#</a></h2>
+<p>“Because,” said Lord Henry, passing beneath his nostrils the gilt trellis of an open vinaigrette box, “one can survive everything nowadays except that. Death and vulgarity are the only two facts in the nineteenth century that one cannot explain away. Let us have our coffee in the music-room, Dorian. You must play Chopin to me. The man with whom my wife ran away played Chopin exquisitely. Poor Victoria! I was very fond of her. The house is rather lonely without her. Of course, married life is merely a habit, a bad habit. But then one regrets the loss even of one’s worst habits. Perhaps one regrets them the most. They are such an essential part of one’s personality.”</p>
+</section>
+<section id="certainty-vs-ambiguity">
+<h2>Certainty vs. Ambiguity<a class="headerlink" href="#certainty-vs-ambiguity" title="Permalink to this heading">#</a></h2>
+<p>“Ah! then it must be an illusion. The things one feels absolutely <code class="docutils literal notranslate"><span class="pre">certain</span></code> about are never true. That is the fatality of <code class="docutils literal notranslate"><span class="pre">faith</span></code>, and the lesson of <code class="docutils literal notranslate"><span class="pre">romance</span></code>. How grave you are! Don’t be so serious. What have you or I to do with the superstitions of our age? No: we have given up our belief in the soul. Play me something. Play me a <code class="docutils literal notranslate"><span class="pre">nocturne</span></code>, Dorian, and, as you play, tell me, in a low voice, how you have kept your youth. You must have some secret. I am only ten years older than you are, and I am wrinkled, and worn, and yellow. You are really wonderful, Dorian. You have never looked more charming than you do to-night. You remind me of the day I saw you first. You were rather cheeky, very shy, and absolutely extraordinary. You have changed, of course, but not in appearance. I wish you would tell me your secret. To get back my youth I would do anything in the world, except take exercise, get up early, or be respectable. Youth! There is nothing like it. It’s absurd to talk of the ignorance of youth. The only people to whose opinions I listen now with any respect are people much younger than myself. They seem in front of me. Life has revealed to them her latest wonder. As for the aged, I always contradict the aged. I do it on principle. If you ask them their opinion on something that happened yesterday, they solemnly give you the opinions current in 1820, when people wore high stocks, believed in everything, and knew absolutely nothing. How lovely that thing you are playing is! I wonder, did <code class="docutils literal notranslate"><span class="pre">Chopin</span></code> write it at Majorca, with the sea weeping round the villa and the salt spray dashing against the panes? It is marvellously romantic. What a blessing it is that there is one art left to us that is <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">imitative</span></code>! Don’t stop. I want music to-night. It seems to me that you are the young Apollo and that I am Marsyas listening to you. I have sorrows, Dorian, of my own, that even you know nothing of. The tragedy of old age is not that one is old, but that one is young. I am amazed sometimes at my own sincerity. Ah, Dorian, how happy you are! What an exquisite life you have had! You have drunk deeply of everything. You have crushed the grapes against your palate. Nothing has been hidden from you. And it has all been to you no more than the sound of music. It has not marred you. You are still the same.”</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ipynb"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-departure-1-2-3"><code class="docutils literal notranslate"><span class="pre">ii</span></code>: Departure 1, 2, 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#v-struggle-4"><code class="docutils literal notranslate"><span class="pre">V</span></code>: Struggle 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-return-5-6"><code class="docutils literal notranslate"><span class="pre">I</span></code>: Return 5, 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activation-function-q">Activation Function <span class="math notranslate nohighlight">\(Q\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biases-u">Biases <span class="math notranslate nohighlight">\(U()\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weights-frac-du-dq">Weights <span class="math notranslate nohighlight">\(\frac{dU()}{dQ}\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bellissimo">Bellissimo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-study-op-28-prelude-no-4-wikipedia-prelude-op-28-no-4">Case-study: Op 28 Prelude No. 4 <span class="xref cite">wikipedia_prelude_op_28_no_4</span></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-i-relative-iii">A: i relative/III</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-im7">B: Im7</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a2-i-relative-iii-v-deletion-other-deletions">A2:  i relative/III (V deletion &amp; other deletions)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b2-im7-shortest-agitato">B2:  im7 (shortest, agitato)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coda-i-minmaj7-9">Coda i minMaj7 (9)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-utility">Marginal-utility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parts-unknown">Parts Unknown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dorian-gray-mode">Dorian Gray Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#certainty-vs-ambiguity">Certainty vs. Ambiguity</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 ADM
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

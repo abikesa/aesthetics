@@ -185,12 +185,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Mortality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">ESRD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Frailty</a></li>
-
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Aim 2</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">Hospitalization</a></li>
-
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">Length of Stay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter3.html">Outcomes</a></li>
 </ul>
@@ -398,24 +396,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efficient-market-hypothesis"><code class="docutils literal notranslate"><span class="pre">Efficient-Market</span> <span class="pre">Hypothesis</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-1-2-3">Null 1, 2, 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sing-o-muse-4">Sing O Muse 4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-5-6">Alternative 5, 6</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-case">Base-case</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s-0"><span class="math notranslate nohighlight">\(S_0\)</span></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-coefficients">Beta Coefficients</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-vector">Scenario Vector</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-notes">Clinical Notes:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-details">Additional Details:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-implications">Clinical Implications:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#directory-structure">Directory Structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-workflow">Step-by-Step Workflow</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-longitudinal">Hierarchical &amp; longitudinal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-representation">Mathematical Representation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-frailty-distributions">Common Frailty Distributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
 </ul>
 </li>
 </ul>
@@ -430,558 +418,67 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="aim-2">
-<span id="aim2-main"></span><h1>Aim 2<a class="headerlink" href="#aim-2" title="Permalink to this heading">#</a></h1>
-<blockquote>
-<div><p><em>Call option price is analogous to the difference between the <code class="docutils literal notranslate"><span class="pre">base-case</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">clinical-scenario</span></code>; i.e., <code class="docutils literal notranslate"><span class="pre">logHR</span></code>. In clinical medicine, we’ve kept our cumulative distribution functions non-parametric, at least for our base-case (62,000 citations: <a class="reference external" href="https://scholar.google.com/scholar?hl=en&amp;amp;as_sdt=0%2C21&amp;amp;q=Regression+Models+and+Life-Tables.%22&amp;amp;btnG=">Google Scholar</a>)</em></p>
-</div></blockquote>
-  <iframe src="./cox.pdf" height="100px" width="100%" style="borders:none"></iframe>
-<div class="math notranslate nohighlight">
-\[
-C(S, t) = S_0 \mathcal{N}(d_1) - X e^{-r(T-t)} \mathcal{N}(d_2)
-\]</div>
-<p>where:</p>
-<div class="math notranslate nohighlight">
-\[
-d_1 = \frac{\ln(S_0/X) + (r + \sigma^2/2)(T-t)}{\sigma \sqrt{T-t}}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-d_2 = d_1 - \sigma \sqrt{T-t}
-\]</div>
-<p>Here, <span class="math notranslate nohighlight">\(C\)</span> is the call option price, <span class="math notranslate nohighlight">\(S_0\)</span> is the current stock price, <span class="math notranslate nohighlight">\(X\)</span> is the strike price, <span class="math notranslate nohighlight">\(r\)</span> is the risk-free interest rate, <span class="math notranslate nohighlight">\(T\)</span> is the time to maturity, <span class="math notranslate nohighlight">\(\sigma\)</span> is the volatility of the stock, and <span class="math notranslate nohighlight">\(\mathcal{N}(\cdot)\)</span> is the cumulative distribution function of the standard normal distribution.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>       1. Chaos
-               \
-  2. Frenzy -&gt; 4. Unpredictable -&gt; 5. Algorithm -&gt; 6. Binary
-               / 
-               3. Random-Walk
-</pre></div>
-</div>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-  <iframe src="https://www.youtube.com/embed/A5w-dEgIU1M?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div>
-<section id="efficient-market-hypothesis">
-<h2><code class="docutils literal notranslate"><span class="pre">Efficient-Market</span> <span class="pre">Hypothesis</span></code><a class="headerlink" href="#efficient-market-hypothesis" title="Permalink to this heading">#</a></h2>
-<section id="null-1-2-3">
-<h3>Null 1, 2, 3<a class="headerlink" href="#null-1-2-3" title="Permalink to this heading">#</a></h3>
+<h1>Aim 2<a class="headerlink" href="#aim-2" title="Permalink to this heading">#</a></h1>
+<section id="hierarchical-longitudinal">
+<h2>Hierarchical &amp; longitudinal<a class="headerlink" href="#hierarchical-longitudinal" title="Permalink to this heading">#</a></h2>
+<p>A frailty function in survival analysis is a random effect model used to account for unobserved heterogeneity or random variation in the survival times of individuals within a study. It introduces an additional random component to the hazard function to capture the influence of latent, unmeasured factors that might affect the risk of an event (such as death, failure, or recurrence).</p>
+<p>Here’s a breakdown of its key aspects:</p>
+<section id="definition">
+<h3>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Voir</span></code>: Random brownian motion as seen in digital information from Bloomberg Terminal; <span class="math notranslate nohighlight">\(\text{H}_0:\)</span> <code class="docutils literal notranslate"><span class="pre">logHR=0</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Savoir</span></code>: Compute may find patterns than Eugene Fama’s mind couldn’t</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Pouvoir</span></code>: <span class="math notranslate nohighlight">\(\mu | \text{X}\beta\)</span> ; <span class="math notranslate nohighlight">\(\sigma | t\)</span>; two overlayed multivariable <em>Kaplan-Meier’s</em></p></li>
+<li><p><strong>Frailty</strong>: Represents unobserved random effects that lead to variations in the hazard function among individuals or groups.</p></li>
+<li><p><strong>Frailty Function</strong>: A function that incorporates these unobserved random effects into the hazard function of a survival model.</p></li>
 </ul>
 </section>
-<section id="sing-o-muse-4">
-<h3>Sing O Muse 4<a class="headerlink" href="#sing-o-muse-4" title="Permalink to this heading">#</a></h3>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Unpredictable</span></code>: Estimates <strong>conditional</strong> on factors millions of orders of magnitude more than human mind “tameth”; no wonder there’s been <strong>gnashing of teeth</strong></p></li>
+<li><p><strong>Unobserved Heterogeneity</strong>: Accounts for individual differences not captured by observed covariates.</p></li>
+<li><p><strong>Clustered Data</strong>: Useful for modeling survival data with a hierarchical structure (e.g., patients within hospitals, litters of animals).</p></li>
 </ul>
 </section>
-<section id="alternative-5-6">
-<h3>Alternative 5, 6<a class="headerlink" href="#alternative-5-6" title="Permalink to this heading">#</a></h3>
+<section id="mathematical-representation">
+<h3>Mathematical Representation<a class="headerlink" href="#mathematical-representation" title="Permalink to this heading">#</a></h3>
+<p>The hazard function with frailty is usually expressed as:
+<span class="math notranslate nohighlight">\( h_i(t | Z_i) = Z_i h_0(t) \exp(X_i\beta) \)</span>
+where:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Identity</span></code>: Some quants, programmers, and algorithms have produced better returns than the null-hypothesis over decades</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Achievements</span></code>: Using super-human <code class="docutils literal notranslate"><span class="pre">AI</span></code> capabilities of machines to handle <span class="math notranslate nohighlight">\(N^N\)</span> <strong>parameters</strong>, <a class="reference external" href="https://en.wikipedia.org/wiki/Jim_Simons#Controversies">Jim Simmons</a> is the best way to summarize this</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p>Simulated: essentially conjuring order (parameters) from chaos (random variation)</p></li>
-<li><p>Real: can a perfect simulation be <code class="docutils literal notranslate"><span class="pre">identified</span></code> or distinguished from real data?</p></li>
-<li><p>Missing: hypothesis elements (principle investigator), data access (clinical notes), client usage (format for patient-caregiver)</p></li>
-<li><p>Imputation: we are doing it anyway, e.g. complete data analysis, so this lays an iterative roadmaps to better inferences</p></li>
-<li><p>Names: the whole Donny misunderstanding Lenin for John Lennon part is just pure genius. I am the walrus hahahahah</p></li>
-</ul>
-</div>
-<iframe src="app/risk.html" width="100%" height="600px" style="borders:none"></iframe>
-<p>You will find these details in the following chapters:</p>
-<ul class="simple">
-<li><p><span class="xref std std-ref">fw-aim1</span></p></li>
-<li><p><span class="xref std std-ref">fw-aim2</span></p></li>
-<li><p><span class="xref std std-ref">fw-aim3</span></p></li>
+<li><p><span class="math notranslate nohighlight">\( h_i(t | Z_i) \)</span> is the hazard function for individual <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\( Z_i \)</span> is the frailty term for individual <span class="math notranslate nohighlight">\(i\)</span>, often assumed to follow a specific distribution (e.g., Gamma or Log-normal).</p></li>
+<li><p><span class="math notranslate nohighlight">\( h_0(t) \)</span> is the baseline hazard function.</p></li>
+<li><p><span class="math notranslate nohighlight">\( X_i \)</span> is the vector of covariates for individual <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\( \beta \)</span> is the vector of coefficients.</p></li>
 </ul>
 </section>
-</section>
-<section id="base-case">
-<h2>Base-case<a class="headerlink" href="#base-case" title="Permalink to this heading">#</a></h2>
-<section id="s-0">
-<h3><span class="math notranslate nohighlight">\(S_0\)</span><a class="headerlink" href="#s-0" title="Permalink to this heading">#</a></h3>
-<div class="math notranslate nohighlight">
-\[
-C(S, t) = S_0 \mathcal{N}(d_1) - X e^{-r(T-t)} \mathcal{N}(d_2)
-\]</div>
-<p>where:</p>
-<div class="math notranslate nohighlight">
-\[
-d_1 = \frac{\ln(S_0/X) + (r + \sigma^2/2)(T-t)}{\sigma \sqrt{T-t}}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-d_2 = d_1 - \sigma \sqrt{T-t}
-\]</div>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># courtesy of meta.ai</span>
-
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">lifelines</span> <span class="kn">import</span> <span class="n">KaplanMeierFitter</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="c1"># Load the data from the CSV file</span>
-<span class="n">s0_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;~/documents/rhythm/business/kitabo/ensi/data/s0_nondonor.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="c1"># Create a KaplanMeierFitter object</span>
-<span class="n">kmf</span> <span class="o">=</span> <span class="n">KaplanMeierFitter</span><span class="p">()</span>
-
-<span class="c1"># Fit the Kaplan-Meier estimate to the data</span>
-<span class="n">kmf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">s0_df</span><span class="p">[</span><span class="s1">&#39;_t&#39;</span><span class="p">],</span> <span class="n">event_observed</span><span class="o">=</span><span class="n">s0_df</span><span class="p">[</span><span class="s1">&#39;_d&#39;</span><span class="p">])</span>
-
-<span class="c1"># Get the survival probabilities</span>
-<span class="n">survival_probabilities</span> <span class="o">=</span> <span class="n">kmf</span><span class="o">.</span><span class="n">survival_function_</span>
-
-<span class="c1"># Calculate the failure probabilities (1 - survival probability)</span>
-<span class="n">failure_probabilities</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">survival_probabilities</span>
-
-<span class="c1"># Plot the failure curve</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kmf</span><span class="o">.</span><span class="n">timeline</span><span class="p">,</span> <span class="n">failure_probabilities</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time (_t)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Failure Probability&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Failure Curve&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s0_df</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</details>
-<div class="cell_output docutils container">
-<img alt="../_images/ccfe2782779abf2af211ea00757eb0be4e403bd3182f2d868423506857f79635.png" src="../_images/ccfe2782779abf2af211ea00757eb0be4e403bd3182f2d868423506857f79635.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       _st  _d         _t  _t0  s0_nondonor
-0        1   1  14.748802    0     0.788091
-1        1   0  29.927446    0     0.576725
-2        1   0  29.746748    0     0.578996
-3        1   0  19.203285    0     0.725669
-4        1   0  20.213552    0     0.711040
-...    ...  ..        ...  ...          ...
-73563    1   0   2.214921    0     0.974868
-73564    1   0   1.516769    0     0.983511
-73565    1   0   1.415469    0     0.984641
-73566    1   0   1.960301    0     0.978229
-73567    1   0   1.100616    0     0.988551
-
-[73568 rows x 5 columns]
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="beta-coefficients">
-<h2>Beta Coefficients<a class="headerlink" href="#beta-coefficients" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;~/documents/rhythm/business/kitabo/ensi/data/b_nondonor.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b_df</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   A         B  C         D  E         F  G         H         I  J  ...  AW  \
-0  0  0.361154  0  0.299617  0 -0.139638  0  0.124114  0.438236  0  ...   0   
-
-         AX        AY        AZ        BA        BB        BC       BD  \
-0  0.178476  1.200497  0.074832  0.004682 -0.003239  0.000075 -0.00227   
-
-         BE        BF  
-0  0.000005  0.000021  
-
-[1 rows x 58 columns]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Define the meaningless headers and data provided</span>
-<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="s2">&quot;G&quot;</span><span class="p">,</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;J&quot;</span><span class="p">,</span> <span class="s2">&quot;K&quot;</span><span class="p">,</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span> <span class="s2">&quot;M&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span><span class="p">,</span> <span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="s2">&quot;Q&quot;</span><span class="p">,</span> <span class="s2">&quot;R&quot;</span><span class="p">,</span> <span class="s2">&quot;S&quot;</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> <span class="s2">&quot;U&quot;</span><span class="p">,</span> <span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="s2">&quot;W&quot;</span><span class="p">,</span> <span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="s2">&quot;Y&quot;</span><span class="p">,</span> <span class="s2">&quot;Z&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;AA&quot;</span><span class="p">,</span> <span class="s2">&quot;AB&quot;</span><span class="p">,</span> <span class="s2">&quot;AC&quot;</span><span class="p">,</span> <span class="s2">&quot;AD&quot;</span><span class="p">,</span> <span class="s2">&quot;AE&quot;</span><span class="p">,</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span> <span class="s2">&quot;AG&quot;</span><span class="p">,</span> <span class="s2">&quot;AH&quot;</span><span class="p">,</span> <span class="s2">&quot;AI&quot;</span><span class="p">,</span> <span class="s2">&quot;AJ&quot;</span><span class="p">,</span> <span class="s2">&quot;AK&quot;</span><span class="p">,</span> <span class="s2">&quot;AL&quot;</span><span class="p">,</span> <span class="s2">&quot;AM&quot;</span><span class="p">,</span> <span class="s2">&quot;AN&quot;</span><span class="p">,</span> <span class="s2">&quot;AO&quot;</span><span class="p">,</span> <span class="s2">&quot;AP&quot;</span><span class="p">,</span> <span class="s2">&quot;AQ&quot;</span><span class="p">,</span> <span class="s2">&quot;AR&quot;</span><span class="p">,</span> <span class="s2">&quot;AS&quot;</span><span class="p">,</span> <span class="s2">&quot;AT&quot;</span><span class="p">,</span> <span class="s2">&quot;AU&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;AV&quot;</span><span class="p">,</span> <span class="s2">&quot;AW&quot;</span><span class="p">,</span> <span class="s2">&quot;AX&quot;</span><span class="p">,</span> <span class="s2">&quot;AY&quot;</span><span class="p">,</span> <span class="s2">&quot;AZ&quot;</span><span class="p">,</span> <span class="s2">&quot;BA&quot;</span><span class="p">,</span> <span class="s2">&quot;BB&quot;</span><span class="p">,</span> <span class="s2">&quot;BC&quot;</span><span class="p">,</span> <span class="s2">&quot;BD&quot;</span><span class="p">,</span> <span class="s2">&quot;BE&quot;</span><span class="p">,</span> <span class="s2">&quot;BF&quot;</span>
-<span class="p">]</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="mi">0</span><span class="p">,</span> <span class="mf">0.3611540640749626</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2996174782817143</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1396380267801064</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1241139571516237</span><span class="p">,</span> <span class="mf">0.438236411976324</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
-    <span class="o">-</span><span class="mf">0.059895226414333</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.3752078798205875</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.0927075946775824</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0744371973326359</span><span class="p">,</span> <span class="mf">0.1240852498460039</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0176059111708996</span><span class="p">,</span> 
-    <span class="o">-</span><span class="mf">0.0684981196640994</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1339078132620516</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1688485989105275</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1749309513874832</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.232756397671939</span><span class="p">,</span> <span class="mf">0.0548690007396233</span><span class="p">,</span> 
-    <span class="mf">0.0072862860322084</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3660394524818282</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4554416752427064</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1691931796222081</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0781079363323375</span><span class="p">,</span> <span class="mf">0.368728384689242</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> 
-    <span class="o">-</span><span class="mf">0.5287614160906285</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5829729708389515</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1041236831513535</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5286676823325914</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2297292995090682</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1657466825095737</span><span class="p">,</span> 
-    <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2234811404289921</span><span class="p">,</span> <span class="mf">0.5530365583277806</span><span class="p">,</span> <span class="o">-</span><span class="mf">43.66976587951415</span><span class="p">,</span> <span class="mf">0.6850541632181936</span><span class="p">,</span> <span class="mf">0.3546286547464611</span><span class="p">,</span> <span class="mf">0.2927117177058185</span><span class="p">,</span> 
-    <span class="mf">0.2910135188333163</span><span class="p">,</span> <span class="mf">0.1551116553040275</span><span class="p">,</span> <span class="mf">0.1682748362958531</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1784756812804011</span><span class="p">,</span> <span class="mf">1.200496862053446</span><span class="p">,</span> <span class="mf">0.0748319011956608</span><span class="p">,</span> 
-    <span class="mf">0.0046824977599823</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0032389485781854</span><span class="p">,</span> <span class="mf">0.0000754693150546</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0022698686486925</span><span class="p">,</span> <span class="mf">5.11669774511e-06</span><span class="p">,</span> <span class="mf">0.0000213400932172</span>
-<span class="p">]</span>
-
-<span class="c1"># Create a DataFrame</span>
-<span class="n">b_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">data</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
-
-<span class="c1"># Define the variable names provided</span>
-<span class="n">variable_names</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;diabetes_no&quot;</span><span class="p">,</span> <span class="s2">&quot;diabetes_yes&quot;</span><span class="p">,</span> <span class="s2">&quot;insulin_no&quot;</span><span class="p">,</span> <span class="s2">&quot;insulin_yes&quot;</span><span class="p">,</span> <span class="s2">&quot;dia_pill_no&quot;</span><span class="p">,</span> <span class="s2">&quot;dia_pill_yes&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;hypertension_no&quot;</span><span class="p">,</span> <span class="s2">&quot;hypertension_yes&quot;</span><span class="p">,</span> <span class="s2">&quot;hypertension_dont_know&quot;</span><span class="p">,</span> <span class="s2">&quot;hbp_pill_no&quot;</span><span class="p">,</span> <span class="s2">&quot;hbp_pill_yes&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;smoke_no&quot;</span><span class="p">,</span> <span class="s2">&quot;smoke_yes&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_ref&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_5000-9999&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_10000-14999&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;income_adjusted_15000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_20000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_25000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_35000&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;income_adjusted_45000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_55000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_65000-74999&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_&gt;20000&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;income_adjusted_&lt;20000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_14&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_15&quot;</span><span class="p">,</span> <span class="s2">&quot;refused_to_answer&quot;</span><span class="p">,</span> <span class="s2">&quot;dont_know&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;gender_female&quot;</span><span class="p">,</span> <span class="s2">&quot;gender_male&quot;</span><span class="p">,</span> <span class="s2">&quot;race_white&quot;</span><span class="p">,</span> <span class="s2">&quot;race_mexican_american&quot;</span><span class="p">,</span> <span class="s2">&quot;race_other_hispanic&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;race_non_hispanic_black&quot;</span><span class="p">,</span> <span class="s2">&quot;race_other&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_good&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_excellent&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_very_good&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_fair&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_poor&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;hs_refused&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_8&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_dont_know&quot;</span><span class="p">,</span> <span class="s2">&quot;education_ref_none&quot;</span><span class="p">,</span> <span class="s2">&quot;education_k8&quot;</span><span class="p">,</span> <span class="s2">&quot;education_some_high_school&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;education_high_school&quot;</span><span class="p">,</span> <span class="s2">&quot;education_some_college&quot;</span><span class="p">,</span> <span class="s2">&quot;education_more_than_college&quot;</span><span class="p">,</span> <span class="s2">&quot;education_refused&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;age_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;boxcar_new_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;bmi_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;egfr_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;uacr_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;ghp&quot;</span>
-<span class="p">]</span>
-
-<span class="c1"># Add an additional label to match the number of columns in the DataFrame</span>
-<span class="n">variable_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;extra_label&quot;</span><span class="p">)</span>
-
-<span class="c1"># Apply the variable names to the DataFrame</span>
-<span class="n">b_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">variable_names</span>
-
-<span class="c1"># Display the DataFrame</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b_df</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   diabetes_no  diabetes_yes  insulin_no  insulin_yes  dia_pill_no  \
-0            0      0.361154           0     0.299617            0   
-
-   dia_pill_yes  hypertension_no  hypertension_yes  hypertension_dont_know  \
-0     -0.139638                0          0.124114                0.438236   
-
-   hbp_pill_no  ...  education_some_college  education_more_than_college  \
-0            0  ...                       0                     0.178476   
-
-   education_refused  age_centered  boxcar_new_centered  bmi_centered  \
-0           1.200497      0.074832             0.004682     -0.003239   
-
-   egfr_centered  uacr_centered       ghp  extra_label  
-0       0.000075       -0.00227  0.000005     0.000021  
-
-[1 rows x 58 columns]
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="scenario-vector">
-<h2>Scenario Vector<a class="headerlink" href="#scenario-vector" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">SV_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;~/documents/rhythm/business/kitabo/ensi/data/SV_nondonor.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">SV_df</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   SV_nondonor1  SV_nondonor2  SV_nondonor3  SV_nondonor4  SV_nondonor5  \
-0             1             0             1             0             0   
-
-   SV_nondonor6  SV_nondonor7  SV_nondonor8  SV_nondonor9  SV_nondonor10  ...  \
-0             1             1             0             0              1  ...   
-
-   SV_nondonor49  SV_nondonor50  SV_nondonor51  SV_nondonor52  SV_nondonor53  \
-0              0              1              0            -20              0   
-
-   SV_nondonor54  SV_nondonor55  SV_nondonor56  SV_nondonor57  SV_nondonor58  
-0              0              0             30              0              0  
-
-[1 rows x 58 columns]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="c1"># Step 1: Read the CSV files</span>
-<span class="n">SV_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;~/documents/rhythm/business/kitabo/ensi/data/SV_nondonor.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">coefficients_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;~/documents/rhythm/business/kitabo/ensi/data/b_nondonor.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">s0_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;~/documents/rhythm/business/kitabo/ensi/data/s0_nondonor.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="c1"># Step 2: Apply the variable names to the scenario vector and coefficient vector</span>
-<span class="n">variable_names</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;diabetes_no&quot;</span><span class="p">,</span> <span class="s2">&quot;diabetes_yes&quot;</span><span class="p">,</span> <span class="s2">&quot;insulin_no&quot;</span><span class="p">,</span> <span class="s2">&quot;insulin_yes&quot;</span><span class="p">,</span> <span class="s2">&quot;dia_pill_no&quot;</span><span class="p">,</span> <span class="s2">&quot;dia_pill_yes&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;hypertension_no&quot;</span><span class="p">,</span> <span class="s2">&quot;hypertension_yes&quot;</span><span class="p">,</span> <span class="s2">&quot;hypertension_dont_know&quot;</span><span class="p">,</span> <span class="s2">&quot;hbp_pill_no&quot;</span><span class="p">,</span> <span class="s2">&quot;hbp_pill_yes&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;smoke_no&quot;</span><span class="p">,</span> <span class="s2">&quot;smoke_yes&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_ref&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_5000-9999&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_10000-14999&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;income_adjusted_15000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_20000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_25000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_35000&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;income_adjusted_45000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_55000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_65000-74999&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_&gt;20000&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;income_adjusted_&lt;20000&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_14&quot;</span><span class="p">,</span> <span class="s2">&quot;income_adjusted_15&quot;</span><span class="p">,</span> <span class="s2">&quot;refused_to_answer&quot;</span><span class="p">,</span> <span class="s2">&quot;dont_know&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;gender_female&quot;</span><span class="p">,</span> <span class="s2">&quot;gender_male&quot;</span><span class="p">,</span> <span class="s2">&quot;race_white&quot;</span><span class="p">,</span> <span class="s2">&quot;race_mexican_american&quot;</span><span class="p">,</span> <span class="s2">&quot;race_other_hispanic&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;race_non_hispanic_black&quot;</span><span class="p">,</span> <span class="s2">&quot;race_other&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_good&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_excellent&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_very_good&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_fair&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_poor&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;hs_refused&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_8&quot;</span><span class="p">,</span> <span class="s2">&quot;hs_dont_know&quot;</span><span class="p">,</span> <span class="s2">&quot;education_ref_none&quot;</span><span class="p">,</span> <span class="s2">&quot;education_k8&quot;</span><span class="p">,</span> <span class="s2">&quot;education_some_high_school&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;education_high_school&quot;</span><span class="p">,</span> <span class="s2">&quot;education_some_college&quot;</span><span class="p">,</span> <span class="s2">&quot;education_more_than_college&quot;</span><span class="p">,</span> <span class="s2">&quot;education_refused&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;age_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;boxcar_new_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;bmi_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;egfr_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;uacr_centered&quot;</span><span class="p">,</span> <span class="s2">&quot;ghp&quot;</span>
-<span class="p">]</span>
-<span class="n">variable_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;extra_label&quot;</span><span class="p">)</span>
-
-<span class="n">SV_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">variable_names</span>
-<span class="n">coefficients_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">variable_names</span>
-
-<span class="c1"># Step 3: Compute the scenario survival probabilities</span>
-<span class="n">scenario</span> <span class="o">=</span> <span class="n">SV_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">coefficients</span> <span class="o">=</span> <span class="n">coefficients_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-
-<span class="n">log_hazard_ratio</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">scenario</span><span class="p">,</span> <span class="n">coefficients</span><span class="p">)</span>
-<span class="n">baseline_hazard</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">s0_df</span><span class="p">[</span><span class="s1">&#39;s0_nondonor&#39;</span><span class="p">])</span>
-<span class="n">scenario_hazard</span> <span class="o">=</span> <span class="n">baseline_hazard</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">log_hazard_ratio</span><span class="p">)</span>
-
-<span class="c1"># Step 4: Convert survival probabilities to failure probabilities</span>
-<span class="n">baseline_failure</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">s0_df</span><span class="p">[</span><span class="s1">&#39;s0_nondonor&#39;</span><span class="p">]</span>
-<span class="n">scenario_failure</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">scenario_hazard</span><span class="p">)</span>
-
-<span class="c1"># Step 5: Plot the failure functions</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">s0_df</span><span class="p">[</span><span class="s1">&#39;_t&#39;</span><span class="p">],</span> <span class="n">baseline_failure</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Base-case Failure Function&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">s0_df</span><span class="p">[</span><span class="s1">&#39;_t&#39;</span><span class="p">],</span> <span class="n">scenario_failure</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Scenario Failure Function&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Failure Probability&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Kaplan-Meier Failure Functions for Base-case and Scenario&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</details>
-<div class="cell_output docutils container">
-<img alt="../_images/49b2781b3037b76730a489571b32f6cf260f4507d10a486239113c27263c7edd.png" src="../_images/49b2781b3037b76730a489571b32f6cf260f4507d10a486239113c27263c7edd.png" />
-</div>
-</div>
-<p>Sure, let’s make it more engaging and detailed. Here’s a clinical summary of the patient based on the given scenario vector:</p>
-<section id="clinical-notes">
-<h3>Clinical Notes:<a class="headerlink" href="#clinical-notes" title="Permalink to this heading">#</a></h3>
-<p>This risk personalization is for a 60-year-old woman, given the centering age of 60 years.</p>
-<ul class="simple">
-<li><p><strong>Diabetes:</strong> She does not have diabetes.</p></li>
-<li><p><strong>Insulin Usage:</strong> She does not use insulin.</p></li>
-<li><p><strong>Diabetes Pill Usage:</strong> She takes diabetes pills.</p></li>
-<li><p><strong>Hypertension:</strong> She has hypertension.</p></li>
-<li><p><strong>High Blood Pressure Medication:</strong> She is on medication for high blood pressure.</p></li>
-<li><p><strong>Smoking Status:</strong> She does not smoke.</p></li>
-<li><p><strong>Income Level:</strong> She belongs to the reference income group, which indicates a baseline category for income.</p></li>
-<li><p><strong>Gender:</strong> Female.</p></li>
-<li><p><strong>Race:</strong> She is of Mexican American descent.</p></li>
-<li><p><strong>Health Status:</strong> Her health status is reported as excellent.</p></li>
-<li><p><strong>Education Level:</strong> She has a K-8 education level.</p></li>
-<li><p><strong>Body Mass Index (BMI):</strong> Centered around the population mean.</p></li>
-<li><p><strong>Estimated Glomerular Filtration Rate (eGFR):</strong> Centered around the population mean.</p></li>
-<li><p><strong>Urine Albumin-to-Creatinine Ratio (UACR):</strong> Centered around the population mean.</p></li>
-<li><p><strong>Glucose-6-Phosphate Dehydrogenase (G6PD) Levels:</strong> Centered around the population mean.</p></li>
-</ul>
-</section>
-<section id="additional-details">
-<h3>Additional Details:<a class="headerlink" href="#additional-details" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong>Refused to answer other questions</strong> related to income levels beyond the reference category.</p></li>
-<li><p><strong>Age-Centered Adjustments:</strong> The patient’s specific clinical metrics (BMI, eGFR, UACR) are centered around the average values for a 60-year-old, indicating adjustments have been made to personalize risk based on age-related norms.</p></li>
-</ul>
-</section>
-<section id="clinical-implications">
-<h3>Clinical Implications:<a class="headerlink" href="#clinical-implications" title="Permalink to this heading">#</a></h3>
-<p>This patient profile suggests a middle-aged woman who is generally in good health, well-managed in terms of her hypertension and diabetes, and has a background of modest education and income. The personalized risk assessment aims to provide a more accurate prediction based on her specific demographic and clinical characteristics.</p>
-<p>This summary should help understand the risk profile for this individual and guide personalized clinical decisions.</p>
-<p>To set up a tidy workflow for updating your app whenever you receive new sets of CSV files, you can follow these steps:</p>
+<section id="common-frailty-distributions">
+<h3>Common Frailty Distributions<a class="headerlink" href="#common-frailty-distributions" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p><strong>Organize your file structure</strong>: Ensure your project has a clear structure for data, scripts, and deployment.</p></li>
-<li><p><strong>Create a script to automate the update process</strong>: Write a script that will read the new CSV files, process the data, and update your app.</p></li>
-<li><p><strong>Use a version control system (Git)</strong>: Track changes and manage updates using Git.</p></li>
-<li><p><strong>Deploy the updated app</strong>: Automate the deployment process using tools like GitHub Pages or a CI/CD pipeline.</p></li>
+<li><p><strong>Gamma Distribution</strong>: Most commonly used due to its mathematical tractability.</p></li>
+<li><p><strong>Log-normal Distribution</strong>: Used when the frailty is believed to have a more complex, asymmetric distribution.</p></li>
+<li><p><strong>Positive Stable Distribution</strong>: Suitable for certain types of clustered survival data.</p></li>
 </ol>
 </section>
-<section id="directory-structure">
-<h3>Directory Structure<a class="headerlink" href="#directory-structure" title="Permalink to this heading">#</a></h3>
-<p>Ensure your directory structure looks like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ensi/
-│
-├── data/
-│   ├── SV_nondonor.csv
-│   ├── b_nondonor.csv
-│   └── s0_nondonor.csv
-│
-├── part2/
-│   └── app/
-│       ├── assets/
-│       │   └── js/
-│       │       └── script.js
-│       ├── index.html
-│       └── README.md
-│
-├── update_data.py
-├── requirements.txt
-└── README.md
-</pre></div>
-</div>
+<section id="applications">
+<h3>Applications<a class="headerlink" href="#applications" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Medical Research</strong>: Modeling patient survival times where individual patient differences are not fully captured by observed variables.</p></li>
+<li><p><strong>Reliability Engineering</strong>: Analyzing the time to failure of components with unobserved heterogeneity.</p></li>
+</ul>
 </section>
-<section id="step-by-step-workflow">
-<h3>Step-by-Step Workflow<a class="headerlink" href="#step-by-step-workflow" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p><strong>Write a Python script to update the data</strong>:</p></li>
-</ol>
-<p>Create a <code class="docutils literal notranslate"><span class="pre">update_data.py</span></code> script to read the CSV files, process the data, and update the necessary JavaScript files.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">os</span>
-
-<span class="c1"># Paths to the CSV files</span>
-<span class="n">data_dir</span> <span class="o">=</span> <span class="s1">&#39;data&#39;</span>
-<span class="n">sv_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s1">&#39;SV_nondonor.csv&#39;</span><span class="p">)</span>
-<span class="n">b_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s1">&#39;b_nondonor.csv&#39;</span><span class="p">)</span>
-<span class="n">s0_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s1">&#39;s0_nondonor.csv&#39;</span><span class="p">)</span>
-
-<span class="c1"># Read the CSV files</span>
-<span class="n">sv_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">sv_file</span><span class="p">)</span>
-<span class="n">b_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">b_file</span><span class="p">)</span>
-<span class="n">s0_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">s0_file</span><span class="p">)</span>
-
-<span class="c1"># Process the data if needed</span>
-<span class="c1"># For example, if you need to format or clean the data, you can do it here</span>
-
-<span class="c1"># Update JavaScript files with new data</span>
-<span class="n">js_file_path</span> <span class="o">=</span> <span class="s1">&#39;part2/app/assets/js/script.js&#39;</span>
-
-<span class="c1"># Function to update the JavaScript file</span>
-<span class="k">def</span> <span class="nf">update_js_file</span><span class="p">(</span><span class="n">js_file_path</span><span class="p">,</span> <span class="n">sv_df</span><span class="p">,</span> <span class="n">b_df</span><span class="p">,</span> <span class="n">s0_df</span><span class="p">):</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">js_file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-        <span class="n">js_content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-    
-    <span class="c1"># Update the JS file content with the new data</span>
-    <span class="n">sv_data</span> <span class="o">=</span> <span class="n">sv_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">)</span>
-    <span class="n">b_data</span> <span class="o">=</span> <span class="n">b_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">)</span>
-    <span class="n">s0_data</span> <span class="o">=</span> <span class="n">s0_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">)</span>
-    
-    <span class="n">js_content</span> <span class="o">=</span> <span class="n">js_content</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
-        <span class="s2">&quot;const scenarioVector = [0, 0, 1]; // Default to general population scenario&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;const scenarioVector = [</span><span class="si">{</span><span class="n">sv_data</span><span class="si">}</span><span class="s2">]; // Updated scenario vector&quot;</span>
-    <span class="p">)</span>
-    
-    <span class="n">js_content</span> <span class="o">=</span> <span class="n">js_content</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
-        <span class="s2">&quot;let beta = [];&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;let beta = [</span><span class="si">{</span><span class="n">b_data</span><span class="si">}</span><span class="s2">]; // Updated beta coefficients&quot;</span>
-    <span class="p">)</span>
-    
-    <span class="n">js_content</span> <span class="o">=</span> <span class="n">js_content</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
-        <span class="s2">&quot;let s0 = [];&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;let s0 = [</span><span class="si">{</span><span class="n">s0_data</span><span class="si">}</span><span class="s2">]; // Updated survival data&quot;</span>
-    <span class="p">)</span>
-    
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">js_file_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">js_content</span><span class="p">)</span>
-
-<span class="c1"># Update the JavaScript file</span>
-<span class="n">update_js_file</span><span class="p">(</span><span class="n">js_file_path</span><span class="p">,</span> <span class="n">sv_df</span><span class="p">,</span> <span class="n">b_df</span><span class="p">,</span> <span class="n">s0_df</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;JavaScript file updated successfully.&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<ol class="arabic simple" start="2">
-<li><p><strong>Set up version control (Git)</strong>:</p></li>
-</ol>
-<p>Initialize a Git repository and commit your changes.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>ensi
-git<span class="w"> </span>init
-git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
-</pre></div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p><strong>Automate deployment with GitHub Pages or CI/CD</strong>:</p></li>
-</ol>
-<p>You can use GitHub Actions to automate the deployment process whenever there’s a new commit to the repository. Create a GitHub Actions workflow file in <code class="docutils literal notranslate"><span class="pre">.github/workflows/deploy.yml</span></code>.</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy to GitHub Pages</span>
-
-<span class="nt">on</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">push</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
-
-<span class="nt">jobs</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">build-and-deploy</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-<span class="w">    </span>
-<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout code</span>
-<span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
-
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Set up Python</span>
-<span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v2</span>
-<span class="w">      </span><span class="nt">with</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.x&#39;</span>
-
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install dependencies</span>
-<span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">        </span><span class="no">python -m pip install --upgrade pip</span>
-<span class="w">        </span><span class="no">pip install -r requirements.txt</span>
-
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Update data</span>
-<span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python update_data.py</span>
-
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy to GitHub Pages</span>
-<span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">peaceiris/actions-gh-pages@v3</span>
-<span class="w">      </span><span class="nt">with</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">github_token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITHUB_TOKEN }}</span>
-<span class="w">        </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./part2/app</span>
-</pre></div>
-</div>
-<ol class="arabic simple" start="4">
-<li><p><strong>Commit and push your changes</strong>:</p></li>
-</ol>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Set up automated deployment&quot;</span>
-git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
-</pre></div>
-</div>
+<section id="benefits">
+<h3>Benefits<a class="headerlink" href="#benefits" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Improved Estimates</strong>: By accounting for unobserved heterogeneity, frailty models can provide more accurate parameter estimates.</p></li>
+<li><p><strong>Model Fit</strong>: Better fit to data where unmeasured variables play a significant role in the hazard rate.</p></li>
+</ul>
 </section>
-<section id="usage">
-<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h3>
-<p>Whenever you receive new CSV files:</p>
-<ol class="arabic simple">
-<li><p>Replace the old CSV files in the <code class="docutils literal notranslate"><span class="pre">data</span></code> directory with the new ones.</p></li>
-<li><p>Run the <code class="docutils literal notranslate"><span class="pre">update_data.py</span></code> script to process the new data and update the JavaScript files.</p></li>
-<li><p>Commit and push the changes to GitHub.</p></li>
-</ol>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>update_data.py
-git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Update data files&quot;</span>
-git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
-</pre></div>
-</div>
-<p>This workflow ensures that your app is always updated with the latest data and deployed automatically.</p>
-<figure class="align-default" id="banner-welcome">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nietzsche_paul-ree_lou-von-salome188.jpg/220px-Nietzsche_paul-ree_lou-von-salome188.jpg"><img alt="Two people, a woman and a man, waving next to a banner that says - welcome." src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nietzsche_paul-ree_lou-von-salome188.jpg/220px-Nietzsche_paul-ree_lou-von-salome188.jpg" style="width: 100%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><em>Power dynamics :)</em></span><a class="headerlink" href="#banner-welcome" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<iframe src="../amadeus.pdf" width="100%" height="1000" style="borders:none"></iframe>
-<iframe src="../bach.pdf" width="100%" height="1000" style="borders:none"></iframe>
-<iframe src="../handel.pdf" width="100%" height="1000" style="borders:none"></iframe>
-<iframe width="100%" height="600px" src="https://www.youtube.com/embed/SQhnuzW5EUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="act2/figures/blanche.png"><img alt="act2/figures/blanche.png" src="act2/figures/blanche.png" style="width: 1px; height: 1px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text"><em>As Time Goes By</em> Compelling sheet music insofar as it sounds like the original performance</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<section id="challenges">
+<h3>Challenges<a class="headerlink" href="#challenges" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Complexity</strong>: Introducing frailty increases model complexity and can complicate parameter estimation.</p></li>
+<li><p><strong>Interpretation</strong>: Interpretation of frailty models can be less straightforward compared to standard Cox models.</p></li>
+</ul>
+<p>In summary, frailty functions are powerful tools in survival analysis to address unobserved heterogeneity and provide more accurate and realistic models for time-to-event data.</p>
 </section>
 </section>
 <div class="toctree-wrapper compound">
@@ -1052,24 +549,14 @@ git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efficient-market-hypothesis"><code class="docutils literal notranslate"><span class="pre">Efficient-Market</span> <span class="pre">Hypothesis</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-1-2-3">Null 1, 2, 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sing-o-muse-4">Sing O Muse 4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-5-6">Alternative 5, 6</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-case">Base-case</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s-0"><span class="math notranslate nohighlight">\(S_0\)</span></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-coefficients">Beta Coefficients</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-vector">Scenario Vector</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-notes">Clinical Notes:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-details">Additional Details:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-implications">Clinical Implications:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#directory-structure">Directory Structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-workflow">Step-by-Step Workflow</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-longitudinal">Hierarchical &amp; longitudinal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-representation">Mathematical Representation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-frailty-distributions">Common Frailty Distributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
 </ul>
 </li>
 </ul>
@@ -1085,10 +572,6 @@ git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </
   
   <div class="footer-item">
     
-<p class="component-author">
-By ADM
-</p>
-
   </div>
   
   <div class="footer-item">
@@ -1103,7 +586,7 @@ By ADM
   <div class="footer-item">
     
 <div class="extra_footer">
-  The Artist is the creator of beautiful things
+  Copyright © 2025 ADM
 
 </div>
   </div>
